@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservas - GimnasioDB</title>
+</head>
+<body>
+    <h1>Reservas de Clases</h1>
+    <form action="reservar_clase.php" method="POST">
+        <label for="usuario">Nombre del Cliente:</label><br>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+
+        <label for="clase">Clase:</label><br>
+        <select id="clase" name="clase">
+            <option value="yoga">Yoga</option>
+            <option value="cardio">Cardio</option>
+            <option value="pesas">Pesas</option>
+            <option value="spinning">Spinning</option>
+        </select><br><br>
+
+        <label for="fecha">Fecha de la Clase:</label><br>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+
+        <input type="submit" value="Reservar Clase">
+    </form>
+
+    <h2>Mis Reservas</h2>
+    <table border="1">
+        <tr>
+            <th>Clase</th>
+            <th>Fecha</th>
+            <th>Estado</th>
+        </tr>
+        <!-- Aquí se llenará con los datos desde la BD -->
+        <tr>
+            <td>Yoga</td>
+            <td>2024-09-10</td>
+            <td>Reservado</td>
+        </tr>
+        <tr>
+            <td>Cardio</td>
+            <td>2024-09-12</td>
+            <td>Cancelado</td>
+        </tr>
+    </table>
+</body>
+</html>

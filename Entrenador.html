@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitar Entrenador - GimnasioDB</title>
+</head>
+<body>
+    <h1>Solicitar Entrenador</h1>
+    <form action="solicitar_entrenador.php" method="POST">
+        <label for="nombre">Nombre del Cliente:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="especialidad">Especialidad del Entrenador:</label><br>
+        <select id="especialidad" name="especialidad">
+            <option value="fitness">Fitness</option>
+            <option value="yoga">Yoga</option>
+            <option value="pesas">Pesas</option>
+            <option value="cardio">Cardio</option>
+        </select><br><br>
+
+        <label for="disponibilidad">Disponibilidad:</label><br>
+        <input type="text" id="disponibilidad" name="disponibilidad" required><br><br>
+
+        <input type="submit" value="Solicitar Entrenador">
+    </form>
+</body>
+</html>

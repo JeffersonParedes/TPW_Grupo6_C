@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympia Fitness</title>
+    <style>
+        /* estilos */
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* contenedor principal */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #d4af37; /* Dorado */
+        }
+
+        /* logo */
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+
+        /* menu de navegacion */
+        nav {
+            background-color: #222;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #d4af37;
+            color: #333;
+        }
+
+        /* seccion acerca de olympia */
+        .about {
+            text-align: center;
+            background-color: #222;
+            font-family: 'Helvetica Neue';
+            padding: 40px 20px;
+            border-top: 5px solid #d4af37;
+            border-bottom: 5px solid #d4af37;
+        }
+
+        .about h2 {
+            color: #d4af37;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+            color: #ffffff;
+        }
+
+        /* Seccion Nuestras Instalaciones */
+        .facilities {
+            background-color: #222;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .facilities h2 {
+            color: #d4af37;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .facilities p {
+            font-size: 1.2em;
+            color: #ffffff;
+            margin-bottom: 40px;
+        }
+
+        .facilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .facilities img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* seccion de botones */
+        .cta-buttons {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .cta-buttons a {
+            background-color: #d4af37;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-buttons a:hover {
+            background-color: #b9972e;
+        }
+
+        /* Estilos de la tabla de planes */
+        .plans {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .plans h2 {
+            color: #d4af37; /* Dorado */
+            font-size: 2em;
+        }
+
+        .plans p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+
+        .plan-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .plan-container table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        .plan-container th, .plan-container td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .plan-container th {
+            background-color: #ffffff;
+            color: #333;
+            font-size: 1.2em;
+        }
+
+        .plan-container td {
+            font-size: 1em;
+            color: #ffffff;
+        }
+
+        .plan-container tfoot td {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #d4af37; /* Dorado */
+        }
+
+        /* footer */
+        footer {
+            background-color: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* responsivo */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            nav ul li a {
+                padding: 10px;
+            }
+
+            .about p {
+                font-size: 1em;
+            }
+
+            .header-content {
+                flex-direction: column;
+            }
+
+            .header-content h1 {
+                margin-bottom: 10px;
+            }
+
+            .plan-container table {
+                font-size: 0.9em;
+            }
+
+            .facilities-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="header-content">
+            <h1>Olympia Fitness</h1>
+            <img src="logo.png" alt="Logo Olympia Fitness" class="logo">
+        </div>
+    </header>
+
+    <!-- Menu de navegacion -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="usuarios.html">Registro de Usuario</a></li>
+                <li><a href="entrenador.html">Solicitar Entrenador</a></li>
+                <li><a href="horarios.html">Ver Horarios de Clases</a></li>
+                <li><a href="reservas.html">Gestionar Reservas</a></li>
+                <li><a href="pagos.html">Gestionar Pagos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Seccion "Acerca de Olympia Fitness" -->
+    <section class="about">
+        <div class="container">
+            <h2>Acerca de Olympia Fitness</h2>
+            <img src="gimbro.jpeg" alt="GymBro" class="gimbro">
+            <p>Alcanza tu divinidad interior.</p>
+        </div>
+    </section>
+
+    <!-- Seccion "Nuestras Instalaciones" -->
+    <section class="facilities">
+        <div class="container">
+            <h2>Nuestras Instalaciones</h2>
+            <p>Conoce nuestras amplias y modernas instalaciones diseñadas para ofrecerte la mejor experiencia de entrenamiento.</p>
+            <div class="facilities-grid">
+                <img src="gim1.jpg" alt="Instalacion 1">
+                <img src="gim2.jpg" alt="Instalacion 2">
+                <img src="gim3.jpg" alt="Instalacion 3">
+            </div>
+        </div>
+    <section class="plans">
+        <h2>Elige tu Plan</h2>
+        <p>¡Comienza a entrenar con nosotros! Elige el plan que quieras y nos vemos en la sede de tu preferencia.</p>
+        
+        <div class="plan-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Más beneficios</th>
+                        <th>PLAN Zeus</th>
+                        <th>PLAN Ares</th>
+                        <th>PLAN Dionisio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Entrena en todos los gimnasios de Olympia Fitness (+1500)</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✘</td>
+                    </tr>
+                    <tr>
+                        <td>Acceso ilimitado a todas las áreas de peso libre y máquinas</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                    </tr>
+                    <tr>
+                        <td>Clases grupales con profesores</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                    </tr>
+                    <tr>
+                        <td>App personalizada de entrenamiento</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                    </tr>
+                    <tr>
+                        <td>5 invitados al mes en el gimnasio</td>
+                        <td>✔</td>
+                        <td>✘</td>
+                        <td>✘</td>
+                    </tr>
+                    <tr>
+                        <td>Relájate en los sillones de masaje</td>
+                        <td>✔</td>
+                        <td>✘</td>
+                        <td>✘</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td>Desde S/ 20.00/mes <br> después del primer mes => S/ 109.90</td>
+                        <td>Desde S/ 19.90/mes <br> después del primer mes => S/ 89.90</td>
+                        <td>Desde S/ 18.90/mes <br> después del primer mes => S/ 79.90</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </section>
+
+    <!-- Seccion de botones de llamada a la acción -->
+    <div class="cta-buttons">
+        <a href="registro.html">Únete Ahora</a>
+        <a href="contacto.html">Contáctanos</a>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Olympia Fitness. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
