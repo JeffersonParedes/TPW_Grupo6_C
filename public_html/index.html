@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Olympia Fitness</title>
+        <link rel="stylesheet" href="stylesindex.css">
+
+    </head>
+    <body>
+
+        <!-- header -->
+        <header>
+            <div class="header-content">
+                <h1>Olympia Fitness</h1>
+                <img src="Logo.jpg" alt="Logo Olympia Fitness" class="logo">
+            </div>
+        </header>
+
+        <!-- Menu de navegacion -->
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="usuarios.html">Registro de Usuario</a></li>
+                    <li><a href="entrenador.html">Solicitar Entrenador</a></li>
+                    <li><a href="horarios.html">Ver Horarios de Clases</a></li>
+                    <li><a href="reservas.html">Gestionar Reservas</a></li>
+                    <li><a href="pagos.html">Gestionar Pagos</a></li>
+                </ul>
+            </div>
+        </nav>
+ 
+        <!-- Seccion "Acerca de Olympia Fitness" -->
+        <section class="about">
+            <div class="container">
+                <h2>Acerca de Olympia Fitness</h2>
+                <!-- Seccion "nuestros coach" -->
+
+                <img src="gimbro.jpeg" alt="GymBro" class="gimbro">
+                <p>Olympia Fitness es un gimnasio moderno y completo 
+                   diseñado para ofrecer una experiencia integral de 
+                   entrenamiento físico. Con instalaciones de vanguardia, 
+                   entrenadores capacitados y un ambiente motivador, Olympia 
+                   Fitness se dedica a ayudar a sus miembros a alcanzar sus 
+                   metas de salud y bienestar. Ofrecemos una amplia gama de 
+                   servicios que incluyen entrenamiento personalizado, clases 
+                   grupales, y acceso a equipos de última generación. Nuestra 
+                   misión es fomentar un estilo de vida activo y saludable, 
+                   adaptándonos a las necesidades de cada uno de nuestros clientes. ¡Únete a Olympia 
+                   Fitness y transforma tu vida!.</p>
+                <p>Alcanza tu divinidad interior.</p>
+            </div>
+        </section>
+
+        <!-- Seccion "Nuestras Instalaciones" -->
+        <section class="facilities">
+            <div class="container">
+                <h2>Nuestras Instalaciones</h2>
+                <p>Conoce nuestras amplias y modernas instalaciones diseñadas para 
+                    ofrecerte la mejor experiencia de entrenamiento.</p>
+
+                <div class="carousel-container">
+                    <div class="carousel-slide" id="carousel-slide">
+                        <img src="gim1.jpg" alt="Instalacion 1">
+                        <img src="gim2.jpg" alt="Instalacion 2">
+                        <img src="gim3.jpg" alt="Instalacion 3">
+                        <img src="gim4.jpg" alt="Instalacion 4">
+                        <img src="gim5.jpg" alt="Instalacion 5">
+                        <img src="gim6.jpg" alt="Instalacion 6">
+
+                    </div>
+                    <button class="chat-button" onclick="toggleChat()">Pregúntanos sobre tus dudas</button>
+
+                    <!-- Ventana del chat -->
+                    <div class="chat-window" id="chat-window">
+                        <div class="chat-header">Chat de Ayuda</div>
+                        <div class="chat-body" id="chat-body">
+                            <!-- Aquí se mostrarían los mensajes -->
+                            <p><strong>Soporte:</strong> ¡Hola! ¿En qué puedo ayudarte hoy?</p>
+                        </div>
+                        <div class="chat-footer">
+                            <input type="text" id="chat-input" placeholder="Escribe tu mensaje...">
+                            <button onclick="sendMessage()">Enviar</button>
+                        </div>
+                    </div>
+
+                    <!-- Botones de navegación -->
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+
+                <!-- Puntos de navegación -->
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+
+                </div>
+                <div class="description" id="description"></div>
+            </div>
+
+            <section class="plans">
+                <h2>Elige tu Plan</h2>
+                <p>¡Comienza a entrenar con nosotros! Elige el plan que quieras y nos vemos en la sede de tu preferencia.</p>
+
+                <div class="plan-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Más beneficios</th>
+                                <th>PLAN Zeus</th>
+                                <th>PLAN Ares</th>
+                                <th>PLAN Dionisio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Entrena en todos los gimnasios de Olympia Fitness (+1500)</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                                <td>✘</td>
+                            </tr>
+                            <tr>
+                                <td>Acceso ilimitado a todas las áreas de peso libre y máquinas</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                            </tr>
+                            <tr>
+                                <td>Clases grupales con profesores</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                            </tr>
+                            <tr>
+                                <td>App personalizada de entrenamiento</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                            </tr>
+                            <tr>
+                                <td>5 invitados al mes en el gimnasio</td>
+                                <td>✔</td>
+                                <td>✘</td>
+                                <td>✘</td>
+                            </tr>
+                            <tr>
+                                <td>Relájate en los sillones de masaje</td>
+                                <td>✔</td>
+                                <td>✘</td>
+                                <td>✘</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td>Desde S/ 20.00/mes <br> en el primer, despues S/ 109.90</td>
+                                <td>Desde S/ 19.90/mes <br> en el primer, despues S/ 89.90</td>
+                                <td>Desde S/ 18.90/mes <br> en el primer, despues S/ 79.90</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+
+
+
+
+            <!-- script de imagenes animadas -->
+            <script>
+                let slideIndex = 0;
+                const descriptions = [
+                    "Instalacion 1 en ATE",
+                    "Instalacion 2 en Santa Rosa",
+                    "Instalacion 3 en Surco",
+                    "Instalacion 4 en Buenos Aires",
+                    "Instalacion 5 en Miraflores",
+                    "Instalacion 6 en 3 de Octubre"
+                ];
+
+                showSlides();
+
+                function moveSlide(n) {
+                    slideIndex += n;
+                    showSlides();
+                }
+
+                function currentSlide(n) {
+                    slideIndex = n - 1;
+                    showSlides();
+                }
+
+                function showSlides() {
+                    const slides = document.querySelectorAll(".carousel-slide img");
+                    const dots = document.querySelectorAll(".dot");
+                    const descriptionBox = document.getElementById("description");
+
+                    if (slideIndex >= slides.length)
+                        slideIndex = 0;
+                    if (slideIndex < 0)
+                        slideIndex = slides.length - 1;
+                    slides.forEach((slide, index) => {
+                        slide.style.display = "none";
+                        slide.addEventListener("click", () => {
+                            descriptionBox.textContent = descriptions[index];
+                            descriptionBox.style.display = "block";
+                        });
+                    });
+                    dots.forEach(dot => dot.classList.remove("active"));
+                    slides[slideIndex].style.display = "block";
+                    dots[slideIndex].classList.add("active");
+
+                    descriptionBox.textContent = descriptions[slideIndex];
+                    descriptionBox.style.display = "block";
+                }
+
+                setInterval(() => moveSlide(1), 5000);
+            </script>
+
+            <!-- script de chat de chat de ayuda-->
+            <script>
+                function toggleChat() {
+                    const chatWindow = document.getElementById('chat-window');
+                    if (chatWindow.style.display === 'none' || chatWindow.style.display === '') {
+                        chatWindow.style.display = 'flex';
+                    } else {
+                        chatWindow.style.display = 'none';
+                    }
+                }
+
+                function sendMessage() {
+                    const chatBody = document.getElementById('chat-body');
+                    const chatInput = document.getElementById('chat-input');
+                    const userMessage = chatInput.value.trim();
+
+                    if (userMessage) {
+                        const messageElement = document.createElement('p');
+                        messageElement.innerHTML = `<strong>Tú:</strong> ${userMessage}`;
+                        chatBody.appendChild(messageElement);
+                        chatInput.value = '';
+                        chatBody.scrollTop = chatBody.scrollHeight;
+                    }
+                }
+            </script>
+
+        <section id="social-media">
+            <h2>Síguenos</h2>
+            <div class="social-icons">
+                <a href="https://twitter.com" target="_blank">
+                    <img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter" />
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook" />
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram" />
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="YouTube" />
+                </a>
+                <a href="https://www.tiktok.com" target="_blank">
+                    <img src="https://img.icons8.com/color/48/000000/tiktok.png" alt="TikTok" />
+                </a>
+            </div>
+        </section>
+
+        <!-- Sección de información sobre la app -->
+        <section id="app-info">
+            <div class="container">
+                <h2>Conoce nuestra App, Olympia Fit</h2>
+                <div class="app-content">
+                    <img src="AppOly.webp" alt="App del gimnasio">
+                    <div class="app-text">
+                        <p>Con nuestra app, puedes reservar clases, seguir tus progresos, encontrar tus ejercicios 
+                            preferidos, conocer nuetras instalaciones.No importa si ya tienes experiencia o 
+                            si recién estás comenzando a practicar actividad física, una cosa es segura: ¡al 
+                            descargar gratis la aplicación Olympia Fit , obtienes el mejor aliado para tu rutina 
+                            de entrenamiento! Exclusivo para clientes.</p>
+                        <div class="app-buttons">
+                            <a href="https://play.google.com/store" target="_blank">
+                                <img alt="Disponible en Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/es_badge_web_generic.png" />
+                            </a>
+                            <a href="https://www.apple.com/app-store/" target="_blank">
+                                <img alt="Disponible en App Store" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+
+        </section>
+        <div class="categories">
+            <h2>Nuestra Empresa</h2>
+            <div class="category-grid">
+                <a href="#">Entrenamientos Personalizados</a>
+                <a href="#">Clases Grupales</a>
+                <a href="#">Sesiones de Yoga</a>
+                <a href="#">CrossFit y Entrenamiento Funcional</a>
+                <a href="#">Nutrición y Dietas</a>
+                <a href="#">Entrenamiento en Casa</a>
+                <a href="#">Equipos de Gimnasio</a>
+                <a href="#">Programas de Acondicionamiento Físico</a>
+                <a href="#">Seguimiento de Progresos</a>
+                <a href="#">Desafíos de Fitness</a>
+                <a href="#">Entrenamiento de Fuerza</a>
+                <a href="#">Recuperación y Estiramientos</a>
+                <a href="#">Planes de Entrenamiento</a>
+                <a href="#">Reservas de Clases</a>
+                <a href="#">Aplicaciones de Fitness</a>
+                <a href="#">Soporte para Miembros</a>
+            </div>
+        </div>
+        <footer>
+            <div class="copyr">
+                <p>&copy; 2024 Olympia Fitness. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </section>
+
+    <!-- footer -->
+
+</body>
+</html>
+
+

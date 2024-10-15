@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenadores de Fitness</title>
+     <link rel="stylesheet" href="Emtrenador.css">
+</head>
+<body>
+<!-- header -->
+    <header>
+        <div class="header-content">
+            <h1>Olympia Fitness</h1>
+            <img src="Logo.jpg" alt="Logo Olympia Fitness" class="logo">
+        </div>
+    </header>
+
+    <div class="registro-usuario">
+        <h1>Solicitar entrenador</h1>
+    </div>
+
+    <!-- Línea horizontal oscura -->
+    <hr class="line">
+
+    <section class="selection">
+        <label for="especialidad">Selecciona Especialidad:</label>
+        <select id="especialidad">
+            <option value="">-- Selecciona --</option>
+            <option value="yoga">Yoga</option>
+            <option value="pesas">Pesas</option>
+            <option value="cardio">Cardio</option>
+        </select>
+
+        <label for="horario">Selecciona Disponibilidad:</label>
+        <select id="horario">
+            <option value="">-- Selecciona --</option>
+            <option value="mañana">Mañana</option>
+            <option value="tarde">Tarde</option>
+            <option value="noche">Noche</option>
+        </select>
+
+        <button id="mostrarTabla">Mostrar Entrenadores</button>
+    </section>
+	
+    <section class="trainer-table">
+        <div id="tablaEntrenadores">
+            <!-- Aquí se llenará la tabla de entrenadores -->
+        </div>
+    </section>
+
+    <!-- Línea horizontal de color #f7c02c -->
+    <hr style="border: none; height: 4px; background-color: #f7c02c; margin: 20px 0;">
+
+    <div class="categories">
+        <h2>Nuestra Empresa</h2>
+        <div class="category-grid">
+            <a href="#">Entrenamientos Personalizados</a>
+            <a href="EntrenamientoGrupal.html">Clases Grupales</a>
+            <a href="#">Sesiones de Yoga</a>
+            <a href="#">CrossFit y Entrenamiento Funcional</a>
+            <a href="#">Nutrición y Dietas</a>
+            <a href="#">Equipos de Gimnasio</a>
+            <a href="#">Programas de Acondicionamiento Físico</a>
+            <a href="#">Seguimiento de Progresos</a>
+            <a href="conoce.html">Nuestros Entrenadores</a>
+            <a href="#">Entrenamiento de Fuerza</a>
+            <a href="#">Recuperación y Estiramientos</a>
+            <a href="PlanesEntre.html">Planes de Entrenamiento</a>
+            <a href="ReservarClass.html">Reservas de Clases</a>
+            <a href="#">Aplicaciones de Fitness</a>
+            <a href="#">Soporte para Miembros</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copyr">
+            <p>&copy; 2024 Olympia Fitness. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="Entrenador.js"></script>
+</body>
+</html>

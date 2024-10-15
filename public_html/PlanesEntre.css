@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px; /* Espaciado alrededor del contenido */
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #ffffff; /* Color de texto */
+}
+
+header {
+    background: #222; /* Fondo del header */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+	color: #d4af37;
+}
+
+h2 {
+    color: #d4af37;
+    margin-top: 20px; /* Espacio superior para h2 */
+    text-align: left; /* Centrado de h2 */
+}
+
+h3 {
+    color: #d4af37;
+    margin-top: 15px; /* Espacio superior para h3 */
+    text-align: left; /* Centrado de h3 */
+}
+
+h4 {
+    color: #d4af37; /* Color de h4 igual a los demás subtítulos */
+    margin-top: 10px; /* Espacio superior para h4 */
+    text-align: center; /* Centrado de h4 */
+}
+
+p, ul {
+    margin: 10px 0; /* Espacio superior e inferior para párrafos y listas */
+    padding: 0 10px; /* Espaciado lateral para párrafos */
+}
+
+.plan-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px; /* Espacio superior para el contenedor de planes */
+}
+
+.plan-box {
+    background: #333; /* Fondo de los recuadros */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    width: 30%; /* Ancho de los recuadros */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    text-align: center; /* Centrar el texto dentro del recuadro */
+}
+
+.plan-box h4 {
+    margin: 0; /* Quitar margen */
+}
+
+.carousel {
+    margin-top: 30px; /* Espacio superior para el carrusel */
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-container img {
+    max-width: 30%; /* Ajuste de tamaño de las imágenes del carrusel */
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px; /* Espacio superior para el pie de página */
+    padding: 10px 0;
+    background: #222;
+    color: #fff;
+}
+
+

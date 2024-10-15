@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px; /* Espaciado para el cuerpo */
+}
+
+h1 {
+    text-align: center;
+    color: #f7c02c;
+}
+
+.info-entrenadores {
+    margin: 20px 0; /* Espaciado entre secciones */
+    padding: 20px; /* Espaciado interno */
+    background-color: #222; /* Fondo de la sección */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+h2 {
+    color: #f7c02c; /* Color para los subtítulos */
+    text-align: center; /* Centrado */
+}
+
+.entrenadores-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Espaciado entre entrenadores */
+}
+
+.entrenador {
+    background-color: #333; /* Fondo de los recuadros */
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px;
+    width: 300px; /* Ancho fijo para los recuadros */
+    text-align: center; /* Centrar texto dentro de los recuadros */
+}
+
+.foto-entrenador {
+    width: 100%; /* Ancho completo para las imágenes */
+    border-radius: 5px; /* Bordes redondeados para imágenes */
+}
+
+h3 {
+    color: #f7c02c; /* Color para nombres */
+}
+
+h4 {
+    color: #ffffff; /* Color para especialidades */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #f7c02c; /* Color para el footer */
+}

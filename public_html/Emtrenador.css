@@ -1,0 +1,150 @@
+body {
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #333;
+            color: #d4af37;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .selection {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .selection label {
+            font-size: 1.2em;
+            margin-right: 10px;
+            color: #d4af37;
+        }
+
+        .selection select {
+            padding: 10px;
+            font-size: 1em;
+            margin: 0 20px;
+            color: #000;
+        }
+
+        .selection button {
+            background-color: #d4af37;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .selection button:hover {
+            background-color: #b9972e;
+        }
+
+        .trainer-table {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .trainer-table table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        .trainer-table th, .trainer-table td {
+            padding: 15px;
+            border: 1px solid #d4af37;
+            text-align: center;
+        }
+
+        .trainer-table th {
+            background-color: #333;
+            color: #d4af37;
+            font-size: 1.2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+
+        /* Estilo para el Registro de Usuario */
+        .registro-usuario {
+            text-align: center;
+            padding: 40px 0; /* Espaciado superior e inferior */
+        }
+
+        .registro-usuario h1 {
+            color: #f7c02c; /* Color especificado */
+            margin: 0;
+        }
+
+        .line {
+            border: none;
+            height: 4px; /* Ajusta el grosor aquí */
+            background-color: #222; /* Color de la línea */
+            margin: 0; /* Elimina el margen para que esté pegada al título */
+        }
+
+        .categories {
+            text-align: left; /* Alinear el contenido a la izquierda */
+            margin-left: 20px; /* Espaciado a la izquierda */
+        }
+
+        .categories h2 {
+            color: #f7c02c; /* Color del título */
+        }
+
+        .categories a {
+            color: white; /* Color del texto */
+            text-decoration: none; /* Sin subrayado */
+            display: block; /* Cada enlace en su propia línea */
+            padding: 0px; /* Espaciado interno */
+            transition: color 0.3s; /* Transición suave para el color */
+        }
+
+        .categories a:hover {
+            color: #d4af37; /* Cambia el color al pasar el ratón */
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        #copyr {
+            align-items: center;
+            background: #f7c02c;
+        }

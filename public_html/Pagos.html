@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagos - GimnasioDB</title>
+</head>
+<body>
+    <h1>Gestión de Pagos</h1>
+    <form action="realizar_pago.php" method="POST">
+        <label for="usuario">Nombre del Cliente:</label><br>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+
+        <label for="monto">Monto a Pagar:</label><br>
+        <input type="text" id="monto" name="monto" required><br><br>
+
+        <label for="tipo_pago">Tipo de Pago:</label><br>
+        <select id="tipo_pago" name="tipo_pago">
+            <option value="membresía">Membresía</option>
+            <option value="servicio adicional">Servicio Adicional</option>
+        </select><br><br>
+
+        <input type="submit" value="Realizar Pago">
+    </form>
+</body>
+</html>
