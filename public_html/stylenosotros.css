@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #f7c02c;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+}
+
+/* Sección "Sobre Nosotros" */
+.about {
+    padding: 60px 20px;
+}
+
+.gimsobre {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.about p {
+    margin-bottom: 20px;
+}
+
+/* Sección Misión y Visión */
+.mission-vision {
+    background-color: #fff;
+    color: #333;
+    padding: 60px 20px;
+}
+
+.mission-vision h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.mission-content, .vision-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #f7c02c;
+    border-radius: 10px;
+    background-color: rgba(247, 192, 44, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .mission-content, .vision-content {
+        margin: 10px 0;
+    }
+}

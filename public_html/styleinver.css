@@ -1,0 +1,112 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #f7c02c;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+}
+
+/* Sección de Inversionistas */
+.investors-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('investors-background.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 60px 20px;
+}
+
+.investor-content {
+    max-width: 800px;
+    margin: auto;
+    animation: fadeIn 1.5s ease;
+}
+
+.investor-content p {
+    margin-bottom: 20px;
+}
+
+.investor-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.invest-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f7c02c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.invest-btn:hover {
+    background-color: #e5a919;
+}
+
+/* Sección de Valores */
+.values-section {
+    background-color: #fff;
+    color: #333;
+    padding: 60px 20px;
+}
+
+.values-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    animation: fadeIn 1.5s ease;
+}
+
+.value {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #f7c02c;
+    border-radius: 10px;
+    background-color: rgba(247, 192, 44, 0.1);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .values-content {
+        flex-direction: column;
+    }
+}
