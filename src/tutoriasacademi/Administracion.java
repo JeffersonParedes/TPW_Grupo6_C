@@ -3,43 +3,37 @@ package tutoriasacademi;
 
 
 public class Administracion extends Persona {
-    private String fechaGestion;
-    private String descripcion;
-    private String tipoGestion;
+    private String puesto;
+    private double descripcion;
+  
 
-    public Administracion(int codigo, String nombre,int edad, String fechaGestion, String descripcion, String tipoGestion) {
-        super(codigo, nombre, edad);
-        this.fechaGestion = fechaGestion;
+    public Administracion(int codigo, String nombre, String apellido, String correo, String fechaDeNacimiento, String nacionalidad, String puesto, double descripcion) {
+        super(codigo, nombre, apellido, correo, fechaDeNacimiento, nacionalidad);
+        this.puesto = puesto;
         this.descripcion = descripcion;
-        this.tipoGestion = tipoGestion;
+  
     }
 
-    public String getFechaGestion() {
-        return fechaGestion;
+    public String getPuesto() {
+        return puesto;
     }
 
-    public void setFechaGestion(String fechaGestion) {
-        this.fechaGestion = fechaGestion;
+    public void setPuesto(String puesto) {
+        this.puesto = puesto;
     }
 
-    public String getDescripcion() {
+    public double getDescripcion() {
         return descripcion;
     }
 
-    public void setDescripcion(String descripcion) {
+    public void setDescripcion(double descripcion) {
         this.descripcion = descripcion;
     }
 
-    public String getTipoGestion() {
-        return tipoGestion;
-    }
 
-    public void setTipoGestion(String tipoGestion) {
-        this.tipoGestion = tipoGestion;
-    }
 
     @Override
     public void mostrarInformacion() {
-        System.out.println("Administración: " + getNombre() + ", Código: " + getCodigo() + ", edad : " + getEdad()+ ", Fecha de Gestión: " + fechaGestion + ", Descripción: " + descripcion + ", Tipo de Gestión: " + tipoGestion);
+        System.out.println("Codigo: " + getCodigo() + ", Nombre: " + getNombre() + ", Apellido: " + getApellido() + ", Correo: " + getCorreo() +", fechaDeNacimiento : " + getFechaDeNacimiento()+ ", nacionalidad : " + getNacionalidad() + ", Puesto: " + puesto + ", Descripción: " + descripcion);
     }
 }
