@@ -8,8 +8,8 @@ public class Profesor extends Persona {
     private String materialEstudio; // Cambiado a String
     private String disponibilidad; // Cambiado a String
 
-    public Profesor(String nombre, String apellido, String correo) {
-        super(codigo, nombre, apellido, correo, fechaNacimiento, nacionalidad, genero);
+     public Profesor(int codigo, String nombre, String apellido, String correo, String fechaNacimiento, String nacionalidad, String genero, String especialidad, String descripcion, double costoPorHora, String materialEstudio, String disponibilidad) {
+     super(codigo, nombre, apellido, correo, fechaNacimiento, nacionalidad, genero);
         this.especialidad = especialidad;
         this.descripcion = descripcion;
         this.costoPorHora = costoPorHora;
