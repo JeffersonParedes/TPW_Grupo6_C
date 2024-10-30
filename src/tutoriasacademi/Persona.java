@@ -1,10 +1,10 @@
 package tutoriasacademi;
 abstract class Persona {
-    private int codigo;
+    int codigo;
     private String nombre;
     private String apellido;
     private String correo;
-    private String fechaNacimiento;
+    String fechaNacimiento;
     private String nacionalidad;
     private String genero;
 
