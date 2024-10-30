@@ -1,4 +1,4 @@
-
+package tutoriasacademi;
 abstract class Persona {
     private int codigo;
     private String nombre;
