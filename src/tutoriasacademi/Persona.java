@@ -1,26 +1,25 @@
 
-package tutoriasacademi;
-
-
-
-
 abstract class Persona {
     private int codigo;
     private String nombre;
     private String apellido;
     private String correo;
-    private String fechaDeNacimiento;
+    private String fechaNacimiento;
     private String nacionalidad;
-    
-    
-    
-    
-    public Persona(int codigo, String nombre, String apellido, String correo, String fechaDeNacimiento, String nacionalidad) {
+    private String genero;
+
+    // Constructor
+    public Persona(int codigo, String nombre, String apellido, String correo, String fechaNacimiento, String nacionalidad, String genero) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.apellido = apellido;
+        this.correo = correo;
+        this.fechaNacimiento = fechaNacimiento;
+        this.nacionalidad = nacionalidad;
+        this.genero = genero;
     }
 
+    // Getters y Setters
     public int getCodigo() {
         return codigo;
     }
@@ -53,12 +52,12 @@ abstract class Persona {
         this.correo = correo;
     }
 
-    public String getFechaDeNacimiento() {
-        return fechaDeNacimiento;
+    public String getFechaNacimiento() {
+        return fechaNacimiento;
     }
 
-    public void setFechaDeNacimiento(String fechaDeNacimiento) {
-        this.fechaDeNacimiento = fechaDeNacimiento;
+    public void setFechaNacimiento(String fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
     }
 
     public String getNacionalidad() {
@@ -69,15 +68,25 @@ abstract class Persona {
         this.nacionalidad = nacionalidad;
     }
 
+    public String getGenero() {
+        return genero;
+    }
 
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
 
+    // Métodos
+    public void registrar() {
+        // Lógica para registrar a la persona
+    }
 
-    // Método abstracto
-    public abstract void mostrarInformacion();
-    // Aca escribimos
-    public static void main(String[] args) {
+    public void iniciarSesion() {
+        // Lógica para iniciar sesión
+    }
 
-     
-        
+    public void cerrarSesion() {
+        // Lógica para cerrar sesión
     }
 }
+
