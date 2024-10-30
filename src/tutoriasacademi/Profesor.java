@@ -1,81 +1,77 @@
 
 package tutoriasacademi;
 
-public class Profesor extends Persona{
-     
-    private String Especialidad;
-    private String Descripcion;
-    private double CostoPorHora;
-    private String MaterialEstudio;
-    private String Disponibilidad;
-    private String Reportar;     
-    
-    public Profesor(int codigo, String nombre, String apellido, String correo, String fechaDeNacimiento, String nacionalidad, String Especialidad, String Descripcion, double CostoPorHora, String MaterialEstudio, String Disponibilidad, String Reportar) {
-        super(codigo, nombre, apellido, correo, fechaDeNacimiento, nacionalidad);
-       
-        this.Especialidad = Especialidad;
-        this.Descripcion = Descripcion;
-        this.CostoPorHora = CostoPorHora;
-        this.MaterialEstudio = MaterialEstudio;
-        this.Disponibilidad = Disponibilidad;
-        this.Reportar = Reportar;
-              
+public class Profesor extends Persona {
+    private String especialidad;
+    private String descripcion;
+    private double costoPorHora;
+    private String materialEstudio; // Cambiado a String
+    private String disponibilidad; // Cambiado a String
+
+    public Profesor(int codigo, String nombre, String apellido, String correo, String fechaNacimiento, String nacionalidad, String genero, String especialidad, String descripcion, double costoPorHora, String materialEstudio, String disponibilidad) {
+        super(codigo, nombre, apellido, correo, fechaNacimiento, nacionalidad, genero);
+        this.especialidad = especialidad;
+        this.descripcion = descripcion;
+        this.costoPorHora = costoPorHora;
+        this.materialEstudio = materialEstudio;
+        this.disponibilidad = disponibilidad;
     }
 
+    // Getters y Setters
     public String getEspecialidad() {
-        return Especialidad;
+        return especialidad;
     }
 
-    public void setEspecialidad(String Especialidad) {
-        this.Especialidad = Especialidad;
+    public void setEspecialidad(String especialidad) {
+        this.especialidad = especialidad;
     }
 
     public String getDescripcion() {
-        return Descripcion;
+        return descripcion;
     }
 
-    public void setDescripcion(String Descripcion) {
-        this.Descripcion = Descripcion;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
     public double getCostoPorHora() {
-        return CostoPorHora;
+        return costoPorHora;
     }
 
-    public void setCostoPorHora(double CostoPorHora) {
-        this.CostoPorHora = CostoPorHora;
+    public void setCostoPorHora(double costoPorHora) {
+        this.costoPorHora = costoPorHora;
     }
 
     public String getMaterialEstudio() {
-        return MaterialEstudio;
+        return materialEstudio;
     }
 
-    public void setMaterialEstudio(String MaterialEstudio) {
-        this.MaterialEstudio = MaterialEstudio;
+    public void setMaterialEstudio(String materialEstudio) {
+        this.materialEstudio = materialEstudio;
     }
 
     public String getDisponibilidad() {
-        return Disponibilidad;
+        return disponibilidad;
     }
 
-    public void setDisponibilidad(String Disponibilidad) {
-        this.Disponibilidad = Disponibilidad;
+    public void setDisponibilidad(String disponibilidad) {
+        this.disponibilidad = disponibilidad;
     }
 
-    public String getReportar() {
-        return Reportar;
-    }
 
-    public void setReportar(String Reportar) {
-        this.Reportar = Reportar;
-    }
-
-    
-
-
-                                                                                                                                                                                                                                                                
-    @Override
     public void mostrarInformacion() {
-        System.out.println("Codigo: " + getCodigo() + ", Nombre: " + getNombre() + ", Apellido: " + getApellido() + ", Correo: " + getCorreo() +", fechaDeNacimiento : " + getFechaDeNacimiento()+ ", nacionalidad : " + getNacionalidad() + ", Especialidad: " + Especialidad + ", Descripcion :  " + Descripcion + ", Costo Por Hora : " + CostoPorHora + ", Material Estudio : " + MaterialEstudio + ", Disponibilidad : " + Disponibilidad +", Reportar : " + Reportar);
+        System.out.println("Codigo: " + getCodigo() + ", Nombre: " + getNombre() + ", Apellido: " + getApellido() + ", Correo: " + getCorreo() + ", Fecha de Nacimiento: " + getFechaNacimiento() + ", Nacionalidad: " + getNacionalidad() + ", Genero: " + getGenero() + ", Especialidad: " + especialidad + ", Descripcion: " + descripcion + ", Costo por Hora: " + costoPorHora + ", Material de Estudio: " + materialEstudio + ", Disponibilidad: " + disponibilidad);
+    }
+
+    public void ofrecerTutoria() {
+        // Lógica para ofrecer una tutoría
+    }
+
+    public void calificar() {
+        // Lógica para calificar
+    }
+
+    public void reportar() {
+        // Lógica para reportar
     }
 }
