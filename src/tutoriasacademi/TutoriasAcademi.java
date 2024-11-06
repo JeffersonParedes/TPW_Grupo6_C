@@ -1,7 +1,7 @@
 
 package tutoriasacademi;
 
-import tutoriasacademi.IGU.Registro;
+import tutoriasacademi.IGU.Inicio;
 
 
 public class TutoriasAcademi {
@@ -9,7 +9,7 @@ public class TutoriasAcademi {
     
     public static void main(String[] args) {
         
-        Registro regis = new Registro();
+        Inicio regis = new Inicio();
         regis.setVisible(true);
         regis.setLocationRelativeTo(null);
     }
