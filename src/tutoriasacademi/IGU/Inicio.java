@@ -38,7 +38,7 @@ public class Inicio extends javax.swing.JFrame {
         TxtContra = new javax.swing.JPasswordField();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
-        jButton1 = new javax.swing.JButton();
+        BtnIngresar = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -86,11 +86,11 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jButton1.setText("Ingresar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        BtnIngresar.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        BtnIngresar.setText("Ingresar");
+        BtnIngresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                BtnIngresarActionPerformed(evt);
             }
         });
 
@@ -105,7 +105,7 @@ public class Inicio extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(83, 83, 83)
-                        .addComponent(jButton1)
+                        .addComponent(BtnIngresar)
                         .addGap(47, 47, 47)
                         .addComponent(BtnLimpiarResistro, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -160,7 +160,7 @@ public class Inicio extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(BtnLimpiarResistro, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(BtnIngresar, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -216,19 +216,19 @@ public class Inicio extends javax.swing.JFrame {
         
     }//GEN-LAST:event_BtnRegistrarseActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void BtnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnIngresarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_BtnIngresarActionPerformed
 
    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BtnIngresar;
     private javax.swing.JButton BtnLimpiarResistro;
     private javax.swing.JButton BtnRegistrarse;
     private javax.swing.JPasswordField TxtContra;
     private javax.swing.JTextArea TxtMensaje;
     private javax.swing.JTextField TxtUsuario;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

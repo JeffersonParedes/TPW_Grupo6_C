@@ -36,11 +36,11 @@ public class Registro extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btnRegistrar = new javax.swing.JButton();
+        btnLimpiar = new javax.swing.JButton();
+        btnSalir = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        texMensaje = new javax.swing.JTextArea();
         txtnombre = new javax.swing.JTextField();
         txtapellido = new javax.swing.JTextField();
         txtcorreo = new javax.swing.JTextField();
@@ -49,8 +49,8 @@ public class Registro extends javax.swing.JFrame {
         txtclave = new javax.swing.JTextField();
         fechanacimiento = new com.toedter.calendar.JDateChooser();
         jLabel10 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        combogenero = new javax.swing.JComboBox<>();
+        combTipo = new javax.swing.JComboBox<>();
+        comboGenero = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -82,29 +82,29 @@ public class Registro extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel9.setText("Clave:");
 
-        jButton1.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jButton1.setText("Registrar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnRegistrar.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        btnRegistrar.setText("Registrar");
+        btnRegistrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnRegistrarActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jButton2.setText("Limpiar");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnLimpiar.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        btnLimpiar.setText("Limpiar");
+        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnLimpiarActionPerformed(evt);
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jButton3.setText("Salir");
+        btnSalir.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        btnSalir.setText("Salir");
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        texMensaje.setColumns(20);
+        texMensaje.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        texMensaje.setRows(5);
+        jScrollPane1.setViewportView(texMensaje);
 
         txtnombre.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         txtnombre.addActionListener(new java.awt.event.ActionListener() {
@@ -128,11 +128,11 @@ public class Registro extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel10.setText("Tipo de Usuario");
 
-        jComboBox1.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Alumno", "Tutor" }));
+        combTipo.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        combTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Alumno", "Tutor" }));
 
-        combogenero.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        combogenero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hombre", "Mujer", "No determinado" }));
+        comboGenero.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        comboGenero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hombre", "Mujer", "No determinado" }));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -140,7 +140,7 @@ public class Registro extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(42, 42, 42)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -156,7 +156,7 @@ public class Registro extends javax.swing.JFrame {
                                     .addComponent(jLabel10)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(42, 42, 42)
-                                .addComponent(jButton1)))
+                                .addComponent(btnRegistrar)))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(18, 18, 18)
@@ -166,7 +166,7 @@ public class Registro extends javax.swing.JFrame {
                                         .addComponent(txtapellido, javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(txtcorreo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(fechanacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(combTipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(48, 48, 48)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -179,10 +179,10 @@ public class Registro extends javax.swing.JFrame {
                                     .addComponent(txtclave)
                                     .addComponent(txtusuario)
                                     .addComponent(txtnacionalidad)
-                                    .addComponent(combogenero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(comboGenero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(9, 9, 9)
-                                .addComponent(jButton2)
+                                .addComponent(btnLimpiar)
                                 .addGap(32, 32, 32)
                                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 418, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 75, Short.MAX_VALUE))
@@ -201,7 +201,7 @@ public class Registro extends javax.swing.JFrame {
                             .addComponent(jLabel2)
                             .addComponent(txtnombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel6)
-                            .addComponent(combogenero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(comboGenero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(19, 19, 19)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel3)
@@ -223,15 +223,15 @@ public class Registro extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(combTipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(26, 26, 26)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnLimpiar)
+                            .addComponent(btnRegistrar, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton3))
+                        .addComponent(btnSalir))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
@@ -255,13 +255,13 @@ public class Registro extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnRegistrarActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnLimpiarActionPerformed
 
     private void txtnombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnombreActionPerformed
         // TODO add your handling code here:
@@ -273,12 +273,12 @@ public class Registro extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> combogenero;
+    private javax.swing.JButton btnLimpiar;
+    private javax.swing.JButton btnRegistrar;
+    private javax.swing.JButton btnSalir;
+    private javax.swing.JComboBox<String> combTipo;
+    private javax.swing.JComboBox<String> comboGenero;
     private com.toedter.calendar.JDateChooser fechanacimiento;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
@@ -291,7 +291,7 @@ public class Registro extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea texMensaje;
     private javax.swing.JTextField txtapellido;
     private javax.swing.JTextField txtclave;
     private javax.swing.JTextField txtcorreo;

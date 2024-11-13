@@ -28,26 +28,26 @@ public class PortalAlumno extends javax.swing.JFrame {
 
         DatosPersonaAlumno = new javax.swing.JFrame();
         jLabel237 = new javax.swing.JLabel();
-        jButton73 = new javax.swing.JButton();
+        btnEditarAlumno = new javax.swing.JButton();
         jScrollPane20 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jButton74 = new javax.swing.JButton();
-        jButton75 = new javax.swing.JButton();
+        txtAreaDescripcionAlumno = new javax.swing.JTextArea();
+        btnGuardarAlumno = new javax.swing.JButton();
+        btnAtrasAlumno = new javax.swing.JButton();
         jDateChooser20 = new com.toedter.calendar.JDateChooser();
         jComboBox37 = new javax.swing.JComboBox<>();
         jLabel238 = new javax.swing.JLabel();
-        jTextField114 = new javax.swing.JTextField();
-        jTextField116 = new javax.swing.JTextField();
-        jTextField117 = new javax.swing.JTextField();
+        txtCorreoAlumno = new javax.swing.JTextField();
+        txtNacionalidadAlumno = new javax.swing.JTextField();
+        txtClaveAlumno = new javax.swing.JTextField();
         jLabel240 = new javax.swing.JLabel();
         jLabel244 = new javax.swing.JLabel();
         jLabel247 = new javax.swing.JLabel();
         jLabel248 = new javax.swing.JLabel();
         jLabel249 = new javax.swing.JLabel();
         jLabel250 = new javax.swing.JLabel();
-        jTextField118 = new javax.swing.JTextField();
-        jTextField119 = new javax.swing.JTextField();
-        jTextField120 = new javax.swing.JTextField();
+        txtNombreAlumo = new javax.swing.JTextField();
+        txtApellidoAlumno = new javax.swing.JTextField();
+        txtUsuarioAlumno = new javax.swing.JTextField();
         jLabel251 = new javax.swing.JLabel();
         jLabel252 = new javax.swing.JLabel();
         TutoriasPasadas = new javax.swing.JFrame();
@@ -59,33 +59,33 @@ public class PortalAlumno extends javax.swing.JFrame {
         jLabel235 = new javax.swing.JLabel();
         jButton76 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
+        jMenuPerfil = new javax.swing.JMenu();
+        jMenuItemDatosAlum = new javax.swing.JMenuItem();
+        jMenuItemTutoriasPasa = new javax.swing.JMenuItem();
+        jMenuTutorias = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
 
         jLabel237.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel237.setText("Nombre:");
 
-        jButton73.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jButton73.setText("Editar");
-        jButton73.addActionListener(new java.awt.event.ActionListener() {
+        btnEditarAlumno.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        btnEditarAlumno.setText("Editar");
+        btnEditarAlumno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton73ActionPerformed(evt);
+                btnEditarAlumnoActionPerformed(evt);
             }
         });
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane20.setViewportView(jTextArea1);
+        txtAreaDescripcionAlumno.setColumns(20);
+        txtAreaDescripcionAlumno.setRows(5);
+        jScrollPane20.setViewportView(txtAreaDescripcionAlumno);
 
-        jButton74.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jButton74.setText("Guardar");
+        btnGuardarAlumno.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        btnGuardarAlumno.setText("Guardar");
 
-        jButton75.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jButton75.setText("Atras");
+        btnAtrasAlumno.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        btnAtrasAlumno.setText("Atras");
 
         jDateChooser20.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
 
@@ -95,11 +95,11 @@ public class PortalAlumno extends javax.swing.JFrame {
         jLabel238.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel238.setText("Fecha de Nacimiento:");
 
-        jTextField114.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtCorreoAlumno.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
 
-        jTextField116.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtNacionalidadAlumno.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
 
-        jTextField117.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtClaveAlumno.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
 
         jLabel240.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel240.setText("Usuario");
@@ -119,16 +119,16 @@ public class PortalAlumno extends javax.swing.JFrame {
         jLabel250.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel250.setText("Nacionalidad:");
 
-        jTextField118.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtNombreAlumo.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
 
-        jTextField119.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jTextField119.addActionListener(new java.awt.event.ActionListener() {
+        txtApellidoAlumno.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtApellidoAlumno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField119ActionPerformed(evt);
+                txtApellidoAlumnoActionPerformed(evt);
             }
         });
 
-        jTextField120.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtUsuarioAlumno.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
 
         jLabel251.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel251.setText("Correo Electronico:");
@@ -156,15 +156,15 @@ public class PortalAlumno extends javax.swing.JFrame {
                         .addGroup(DatosPersonaAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(DatosPersonaAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DatosPersonaAlumnoLayout.createSequentialGroup()
-                                    .addComponent(jTextField116, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtNacionalidadAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(167, 167, 167))
                                 .addComponent(jDateChooser20, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(DatosPersonaAlumnoLayout.createSequentialGroup()
                                 .addGroup(DatosPersonaAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(DatosPersonaAlumnoLayout.createSequentialGroup()
                                         .addGroup(DatosPersonaAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addComponent(jTextField118, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField119, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(txtNombreAlumo, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtApellidoAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGap(163, 163, 163)
                                         .addGroup(DatosPersonaAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addComponent(jLabel244)
@@ -172,17 +172,17 @@ public class PortalAlumno extends javax.swing.JFrame {
                                     .addComponent(jLabel249))
                                 .addGap(11, 11, 11)
                                 .addGroup(DatosPersonaAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField120, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
-                                    .addComponent(jTextField117)
+                                    .addComponent(txtUsuarioAlumno, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
+                                    .addComponent(txtClaveAlumno)
                                     .addComponent(jComboBox37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jTextField114, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtCorreoAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DatosPersonaAlumnoLayout.createSequentialGroup()
                                 .addGap(60, 60, 60)
-                                .addComponent(jButton73)
+                                .addComponent(btnEditarAlumno)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton74)
+                                .addComponent(btnGuardarAlumno)
                                 .addGap(84, 84, 84)
-                                .addComponent(jButton75)
+                                .addComponent(btnAtrasAlumno)
                                 .addGap(144, 144, 144))
                             .addComponent(jScrollPane20))))
                 .addContainerGap(61, Short.MAX_VALUE))
@@ -195,25 +195,25 @@ public class PortalAlumno extends javax.swing.JFrame {
                 .addGap(32, 32, 32)
                 .addGroup(DatosPersonaAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel237)
-                    .addComponent(jTextField118, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNombreAlumo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel240)
-                    .addComponent(jTextField120, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtUsuarioAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(DatosPersonaAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel247, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField119, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtApellidoAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel244)
-                    .addComponent(jTextField117, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtClaveAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(DatosPersonaAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel251)
-                    .addComponent(jTextField114, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCorreoAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel249)
                     .addComponent(jComboBox37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(DatosPersonaAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel250)
-                    .addComponent(jTextField116, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtNacionalidadAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(DatosPersonaAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(DatosPersonaAlumnoLayout.createSequentialGroup()
@@ -227,9 +227,9 @@ public class PortalAlumno extends javax.swing.JFrame {
                     .addComponent(jScrollPane20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
                 .addGroup(DatosPersonaAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton73)
-                    .addComponent(jButton74)
-                    .addComponent(jButton75))
+                    .addComponent(btnEditarAlumno)
+                    .addComponent(btnGuardarAlumno)
+                    .addComponent(btnAtrasAlumno))
                 .addGap(56, 56, 56))
         );
 
@@ -316,30 +316,30 @@ public class PortalAlumno extends javax.swing.JFrame {
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
-        jMenu1.setText("Perfil");
+        jMenuPerfil.setText("Perfil");
 
-        jMenuItem1.setText("Datos Personales");
-        jMenu1.add(jMenuItem1);
+        jMenuItemDatosAlum.setText("Datos Personales");
+        jMenuPerfil.add(jMenuItemDatosAlum);
 
-        jMenuItem2.setText("Tutorias Pasadas");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemTutoriasPasa.setText("Tutorias Pasadas");
+        jMenuItemTutoriasPasa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                jMenuItemTutoriasPasaActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem2);
+        jMenuPerfil.add(jMenuItemTutoriasPasa);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(jMenuPerfil);
 
-        jMenu2.setText("Tutorias");
+        jMenuTutorias.setText("Tutorias");
 
         jMenuItem3.setText("Pedir Tutorias");
-        jMenu2.add(jMenuItem3);
+        jMenuTutorias.add(jMenuItem3);
 
         jMenuItem4.setText("Tutorias");
-        jMenu2.add(jMenuItem4);
+        jMenuTutorias.add(jMenuItem4);
 
-        jMenuBar1.add(jMenu2);
+        jMenuBar1.add(jMenuTutorias);
 
         setJMenuBar(jMenuBar1);
 
@@ -357,17 +357,17 @@ public class PortalAlumno extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton73ActionPerformed
+    private void btnEditarAlumnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarAlumnoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton73ActionPerformed
+    }//GEN-LAST:event_btnEditarAlumnoActionPerformed
 
-    private void jTextField119ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField119ActionPerformed
+    private void txtApellidoAlumnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoAlumnoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField119ActionPerformed
+    }//GEN-LAST:event_txtApellidoAlumnoActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+    private void jMenuItemTutoriasPasaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemTutoriasPasaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    }//GEN-LAST:event_jMenuItemTutoriasPasaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -377,9 +377,9 @@ public class PortalAlumno extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JFrame DatosPersonaAlumno;
     private javax.swing.JFrame TutoriasPasadas;
-    private javax.swing.JButton jButton73;
-    private javax.swing.JButton jButton74;
-    private javax.swing.JButton jButton75;
+    private javax.swing.JButton btnAtrasAlumno;
+    private javax.swing.JButton btnEditarAlumno;
+    private javax.swing.JButton btnGuardarAlumno;
     private javax.swing.JButton jButton76;
     private javax.swing.JComboBox<String> jComboBox37;
     private com.toedter.calendar.JDateChooser jDateChooser20;
@@ -397,22 +397,22 @@ public class PortalAlumno extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel250;
     private javax.swing.JLabel jLabel251;
     private javax.swing.JLabel jLabel252;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItemDatosAlum;
+    private javax.swing.JMenuItem jMenuItemTutoriasPasa;
+    private javax.swing.JMenu jMenuPerfil;
+    private javax.swing.JMenu jMenuTutorias;
     private javax.swing.JScrollPane jScrollPane19;
     private javax.swing.JScrollPane jScrollPane20;
     private javax.swing.JTable jTable19;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField114;
-    private javax.swing.JTextField jTextField116;
-    private javax.swing.JTextField jTextField117;
-    private javax.swing.JTextField jTextField118;
-    private javax.swing.JTextField jTextField119;
-    private javax.swing.JTextField jTextField120;
+    private javax.swing.JTextField txtApellidoAlumno;
+    private javax.swing.JTextArea txtAreaDescripcionAlumno;
+    private javax.swing.JTextField txtClaveAlumno;
+    private javax.swing.JTextField txtCorreoAlumno;
+    private javax.swing.JTextField txtNacionalidadAlumno;
+    private javax.swing.JTextField txtNombreAlumo;
+    private javax.swing.JTextField txtUsuarioAlumno;
     // End of variables declaration//GEN-END:variables
 }

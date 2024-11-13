@@ -35,13 +35,13 @@ public class ProfesorGUI extends javax.swing.JFrame {
         DatosPersona = new javax.swing.JFrame();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
+        txtNombreTutor = new javax.swing.JTextField();
+        txtApellidoTutor = new javax.swing.JTextField();
+        txtUsuarioTutor = new javax.swing.JTextField();
+        txtCorreoTutor = new javax.swing.JTextField();
+        txtEspecialodadTutor = new javax.swing.JTextField();
+        txtNacionalidadTuTor = new javax.swing.JTextField();
+        txtClaveTutor = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -51,27 +51,27 @@ public class ProfesorGUI extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        txtCostoTutor = new javax.swing.JTextField();
+        btnEditarDatosTutor = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        txtDescripcion = new javax.swing.JTextArea();
+        btnGuardarDatosTutor = new javax.swing.JButton();
+        btnAtrasDatosTutor = new javax.swing.JButton();
+        FechaTutor = new com.toedter.calendar.JDateChooser();
+        jComboGeneroTutor = new javax.swing.JComboBox<>();
         jLabel17 = new javax.swing.JLabel();
         Disponivilidad = new javax.swing.JFrame();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
+        btnEditarDisp = new javax.swing.JButton();
+        btnGuardarDispo = new javax.swing.JButton();
+        btnHechoDisp = new javax.swing.JButton();
+        txtMesTutor = new javax.swing.JTextField();
+        txtDiaTutor = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
+        txtAñoTutor = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
+        txtHotaInicioTutor = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
-        jTextField13 = new javax.swing.JTextField();
+        txtHoraFinTutor = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
@@ -82,42 +82,42 @@ public class ProfesorGUI extends javax.swing.JFrame {
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
+        btnAgregarTema = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
+        btnEditarMaterial = new javax.swing.JButton();
+        btnGuardarMatrial = new javax.swing.JButton();
         jLabel34 = new javax.swing.JLabel();
-        jTextField16 = new javax.swing.JTextField();
-        jTextField17 = new javax.swing.JTextField();
-        jTextField18 = new javax.swing.JTextField();
-        jButton14 = new javax.swing.JButton();
+        txtTipoMaterial = new javax.swing.JTextField();
+        txtDescripcionMaterial = new javax.swing.JTextField();
+        txtTituloMaterial = new javax.swing.JTextField();
+        btnHechoMaterial = new javax.swing.JButton();
         Tema = new javax.swing.JFrame();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
+        btnEditTema = new javax.swing.JButton();
+        txtGuardarTema = new javax.swing.JButton();
         jLabel29 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
-        jButton12 = new javax.swing.JButton();
+        btnHechoTema = new javax.swing.JButton();
         jScrollPane4 = new javax.swing.JScrollPane();
         jTable3 = new javax.swing.JTable();
         jLabel33 = new javax.swing.JLabel();
-        jButton13 = new javax.swing.JButton();
-        jDateChooser2 = new com.toedter.calendar.JDateChooser();
-        jTextField14 = new javax.swing.JTextField();
-        jTextField15 = new javax.swing.JTextField();
+        btnBorrarTema = new javax.swing.JButton();
+        txtFechaTema = new com.toedter.calendar.JDateChooser();
+        txtAsignaturaTema = new javax.swing.JTextField();
+        txtTituloTema = new javax.swing.JTextField();
         jScrollPane5 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
+        txtContenidoTema = new javax.swing.JTextArea();
         jDesktopPane2 = new javax.swing.JDesktopPane();
         jLabel1 = new javax.swing.JLabel();
         jButton15 = new javax.swing.JButton();
         jMenuBar2 = new javax.swing.JMenuBar();
-        jMenu3 = new javax.swing.JMenu();
-        jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenu6 = new javax.swing.JMenu();
+        jMenuPerfilTutor = new javax.swing.JMenu();
+        jMenuItemDatosTutor = new javax.swing.JMenuItem();
+        jMenuItemDisponibi = new javax.swing.JMenuItem();
+        jMenuItemMaterial = new javax.swing.JMenuItem();
+        jMenuTutoriasTutor = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
 
@@ -129,24 +129,24 @@ public class ProfesorGUI extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel3.setText("Nacionalidad:");
 
-        jTextField1.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtNombreTutor.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
 
-        jTextField2.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        txtApellidoTutor.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtApellidoTutor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                txtApellidoTutorActionPerformed(evt);
             }
         });
 
-        jTextField3.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtUsuarioTutor.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
 
-        jTextField4.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtCorreoTutor.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
 
-        jTextField5.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtEspecialodadTutor.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
 
-        jTextField6.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtNacionalidadTuTor.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
 
-        jTextField7.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtClaveTutor.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
 
         jLabel4.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel4.setText("Usuario");
@@ -175,30 +175,30 @@ public class ProfesorGUI extends javax.swing.JFrame {
         jLabel14.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel14.setText("Nombre:");
 
-        jTextField10.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtCostoTutor.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
 
-        jButton1.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jButton1.setText("Editar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnEditarDatosTutor.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        btnEditarDatosTutor.setText("Editar");
+        btnEditarDatosTutor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnEditarDatosTutorActionPerformed(evt);
             }
         });
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        txtDescripcion.setColumns(20);
+        txtDescripcion.setRows(5);
+        jScrollPane1.setViewportView(txtDescripcion);
 
-        jButton2.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jButton2.setText("Guardar");
+        btnGuardarDatosTutor.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        btnGuardarDatosTutor.setText("Guardar");
 
-        jButton3.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jButton3.setText("Atras");
+        btnAtrasDatosTutor.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        btnAtrasDatosTutor.setText("Atras");
 
-        jDateChooser1.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        FechaTutor.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
 
-        jComboBox1.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hombre", "Mujer", "Indeterminado" }));
+        jComboGeneroTutor.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jComboGeneroTutor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hombre", "Mujer", "Indeterminado" }));
 
         jLabel17.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel17.setText("Fecha de Nacimiento:");
@@ -224,45 +224,45 @@ public class ProfesorGUI extends javax.swing.JFrame {
                             .addGroup(DatosPersonaLayout.createSequentialGroup()
                                 .addGroup(DatosPersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DatosPersonaLayout.createSequentialGroup()
-                                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtNacionalidadTuTor, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(167, 167, 167))
-                                    .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(FechaTutor, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(140, 140, 140)
                                 .addComponent(jLabel2)
                                 .addGap(18, 18, 18)
-                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jComboGeneroTutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(DatosPersonaLayout.createSequentialGroup()
                                 .addGroup(DatosPersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(DatosPersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                         .addGroup(DatosPersonaLayout.createSequentialGroup()
-                                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jLabel4))
-                                        .addGroup(DatosPersonaLayout.createSequentialGroup()
-                                            .addGroup(DatosPersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addGroup(DatosPersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DatosPersonaLayout.createSequentialGroup()
                                                     .addGroup(DatosPersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addComponent(txtNombreTutor, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(txtApellidoTutor, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                     .addGap(163, 163, 163))
                                                 .addGroup(DatosPersonaLayout.createSequentialGroup()
-                                                    .addComponent(jButton1)
-                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                    .addComponent(jButton2)
+                                                    .addComponent(btnEditarDatosTutor)
                                                     .addGap(81, 81, 81)))
                                             .addGroup(DatosPersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jButton3)
+                                                .addComponent(btnAtrasDatosTutor)
                                                 .addGroup(DatosPersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                     .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)))))
+                                                    .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING))))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, DatosPersonaLayout.createSequentialGroup()
+                                            .addGroup(DatosPersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(btnGuardarDatosTutor)
+                                                .addComponent(txtCorreoTutor, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jLabel4)))
                                     .addComponent(jLabel5))
                                 .addGap(18, 18, 18)
                                 .addGroup(DatosPersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField3)
-                                    .addComponent(jTextField7)
-                                    .addComponent(jTextField10)
-                                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                    .addComponent(txtUsuarioTutor)
+                                    .addComponent(txtClaveTutor)
+                                    .addComponent(txtCostoTutor)
+                                    .addComponent(txtEspecialodadTutor, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         DatosPersonaLayout.setVerticalGroup(
@@ -275,26 +275,26 @@ public class ProfesorGUI extends javax.swing.JFrame {
                     .addGroup(DatosPersonaLayout.createSequentialGroup()
                         .addGroup(DatosPersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel14)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtNombreTutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel9)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtEspecialodadTutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(DatosPersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel7)
-                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtCostoTutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtApellidoTutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(DatosPersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel16)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtCorreoTutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtUsuarioTutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel4))
                         .addGap(18, 18, 18)
                         .addGroup(DatosPersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel3)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtNacionalidadTuTor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtClaveTutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel5))
                         .addGap(18, 18, 18)
                         .addGroup(DatosPersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -303,75 +303,75 @@ public class ProfesorGUI extends javax.swing.JFrame {
                                 .addGap(6, 6, 6))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DatosPersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(jLabel2)
-                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jComboGeneroTutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(FechaTutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(DatosPersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel10)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(DatosPersonaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3)
-                    .addComponent(jButton1))
+                    .addComponent(btnGuardarDatosTutor)
+                    .addComponent(btnAtrasDatosTutor)
+                    .addComponent(btnEditarDatosTutor))
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
-        jButton4.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jButton4.setText("Editar");
+        btnEditarDisp.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        btnEditarDisp.setText("Editar");
 
-        jButton5.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jButton5.setText("Guardar");
+        btnGuardarDispo.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        btnGuardarDispo.setText("Guardar");
 
-        jButton6.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jButton6.setText("Hecho");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        btnHechoDisp.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        btnHechoDisp.setText("Hecho");
+        btnHechoDisp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                btnHechoDispActionPerformed(evt);
             }
         });
 
-        jTextField8.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+        txtMesTutor.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtMesTutor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField8ActionPerformed(evt);
+                txtMesTutorActionPerformed(evt);
             }
         });
 
-        jTextField9.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jTextField9.addActionListener(new java.awt.event.ActionListener() {
+        txtDiaTutor.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtDiaTutor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField9ActionPerformed(evt);
+                txtDiaTutorActionPerformed(evt);
             }
         });
 
         jLabel8.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
-        jLabel8.setText("Disponibilidad del Profesor:");
+        jLabel8.setText("Disponibilidad del Tutor:");
 
-        jTextField11.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jTextField11.addActionListener(new java.awt.event.ActionListener() {
+        txtAñoTutor.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtAñoTutor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField11ActionPerformed(evt);
+                txtAñoTutorActionPerformed(evt);
             }
         });
 
         jLabel11.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel11.setText("Dia:");
 
-        jTextField12.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jTextField12.addActionListener(new java.awt.event.ActionListener() {
+        txtHotaInicioTutor.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtHotaInicioTutor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField12ActionPerformed(evt);
+                txtHotaInicioTutorActionPerformed(evt);
             }
         });
 
         jLabel12.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel12.setText("Mes:");
 
-        jTextField13.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jTextField13.addActionListener(new java.awt.event.ActionListener() {
+        txtHoraFinTutor.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtHoraFinTutor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField13ActionPerformed(evt);
+                txtHoraFinTutorActionPerformed(evt);
             }
         });
 
@@ -410,30 +410,30 @@ public class ProfesorGUI extends javax.swing.JFrame {
                             .addGroup(DisponivilidadLayout.createSequentialGroup()
                                 .addComponent(jLabel13)
                                 .addGap(18, 18, 18)
-                                .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtAñoTutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(DisponivilidadLayout.createSequentialGroup()
                                 .addGroup(DisponivilidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel12)
                                     .addComponent(jLabel11))
                                 .addGap(18, 18, 18)
                                 .addGroup(DisponivilidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(txtDiaTutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtMesTutor, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(33, 33, 33)
                                 .addGroup(DisponivilidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(jLabel18)
                                     .addComponent(jLabel19))
                                 .addGap(18, 18, 18)
                                 .addGroup(DisponivilidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(txtHoraFinTutor, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtHotaInicioTutor, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(DisponivilidadLayout.createSequentialGroup()
                         .addGap(27, 27, 27)
-                        .addComponent(jButton4)
+                        .addComponent(btnEditarDisp)
                         .addGap(64, 64, 64)
-                        .addComponent(jButton5)
+                        .addComponent(btnGuardarDispo)
                         .addGap(79, 79, 79)
-                        .addComponent(jButton6))
+                        .addComponent(btnHechoDisp))
                     .addComponent(jLabel8)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(19, Short.MAX_VALUE))
@@ -447,25 +447,25 @@ public class ProfesorGUI extends javax.swing.JFrame {
                 .addGroup(DisponivilidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
                     .addComponent(jLabel18)
-                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtHotaInicioTutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtDiaTutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(DisponivilidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtMesTutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel19)
-                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtHoraFinTutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(DisponivilidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
-                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtAñoTutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
                 .addGroup(DisponivilidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton4)
-                    .addComponent(jButton5)
-                    .addComponent(jButton6))
+                    .addComponent(btnEditarDisp)
+                    .addComponent(btnGuardarDispo)
+                    .addComponent(btnHechoDisp))
                 .addGap(42, 42, 42))
         );
 
@@ -481,11 +481,11 @@ public class ProfesorGUI extends javax.swing.JFrame {
         jLabel28.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
         jLabel28.setText("Temas del Material de Estudio:");
 
-        jButton7.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jButton7.setText("Agregar");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        btnAgregarTema.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        btnAgregarTema.setText("Agregar");
+        btnAgregarTema.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                btnAgregarTemaActionPerformed(evt);
             }
         });
 
@@ -502,31 +502,31 @@ public class ProfesorGUI extends javax.swing.JFrame {
         ));
         jScrollPane3.setViewportView(jTable2);
 
-        jButton8.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jButton8.setText("Editar");
+        btnEditarMaterial.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        btnEditarMaterial.setText("Editar");
 
-        jButton9.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jButton9.setText("Guardar");
+        btnGuardarMatrial.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        btnGuardarMatrial.setText("Guardar");
 
         jLabel34.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
         jLabel34.setText("Material de Estudio del Tutor:");
 
-        jTextField16.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtTipoMaterial.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
 
-        jTextField17.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jTextField17.addActionListener(new java.awt.event.ActionListener() {
+        txtDescripcionMaterial.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtDescripcionMaterial.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField17ActionPerformed(evt);
+                txtDescripcionMaterialActionPerformed(evt);
             }
         });
 
-        jTextField18.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtTituloMaterial.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
 
-        jButton14.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jButton14.setText("Hecho");
-        jButton14.addActionListener(new java.awt.event.ActionListener() {
+        btnHechoMaterial.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        btnHechoMaterial.setText("Hecho");
+        btnHechoMaterial.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton14ActionPerformed(evt);
+                btnHechoMaterialActionPerformed(evt);
             }
         });
 
@@ -552,15 +552,15 @@ public class ProfesorGUI extends javax.swing.JFrame {
                                             .addComponent(jLabel26))
                                         .addGap(24, 24, 24)
                                         .addGroup(MaterialEstudioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, 302, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                            .addComponent(txtTipoMaterial, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtDescripcionMaterial, javax.swing.GroupLayout.PREFERRED_SIZE, 302, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtTituloMaterial, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                             .addGroup(MaterialEstudioLayout.createSequentialGroup()
                                 .addGroup(MaterialEstudioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(MaterialEstudioLayout.createSequentialGroup()
                                         .addComponent(jLabel28)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jButton7))
+                                        .addComponent(btnAgregarTema))
                                     .addComponent(jLabel34))
                                 .addGap(0, 0, Short.MAX_VALUE))))
                     .addGroup(MaterialEstudioLayout.createSequentialGroup()
@@ -570,11 +570,11 @@ public class ProfesorGUI extends javax.swing.JFrame {
                                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(MaterialEstudioLayout.createSequentialGroup()
                                 .addGap(61, 61, 61)
-                                .addComponent(jButton8)
+                                .addComponent(btnEditarMaterial)
                                 .addGap(53, 53, 53)
-                                .addComponent(jButton9)
+                                .addComponent(btnGuardarMatrial)
                                 .addGap(60, 60, 60)
-                                .addComponent(jButton14)))
+                                .addComponent(btnHechoMaterial)))
                         .addGap(0, 5, Short.MAX_VALUE)))
                 .addContainerGap(42, Short.MAX_VALUE))
         );
@@ -586,34 +586,34 @@ public class ProfesorGUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(MaterialEstudioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel22)
-                    .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtTituloMaterial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(MaterialEstudioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel26)
-                    .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtTipoMaterial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15)
                 .addGroup(MaterialEstudioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel27)
-                    .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtDescripcionMaterial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(13, 13, 13)
                 .addGroup(MaterialEstudioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton8)
-                    .addComponent(jButton9)
-                    .addComponent(jButton14))
+                    .addComponent(btnEditarMaterial)
+                    .addComponent(btnGuardarMatrial)
+                    .addComponent(btnHechoMaterial))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(MaterialEstudioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel28)
-                    .addComponent(jButton7))
+                    .addComponent(btnAgregarTema))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
-        jButton10.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jButton10.setText("Editar");
+        btnEditTema.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        btnEditTema.setText("Editar");
 
-        jButton11.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jButton11.setText("Guardar");
+        txtGuardarTema.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtGuardarTema.setText("Guardar");
 
         jLabel29.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel29.setText("Contenido:");
@@ -627,11 +627,11 @@ public class ProfesorGUI extends javax.swing.JFrame {
         jLabel32.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
         jLabel32.setText("Tema:");
 
-        jButton12.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jButton12.setText("Hecho");
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
+        btnHechoTema.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        btnHechoTema.setText("Hecho");
+        btnHechoTema.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+                btnHechoTemaActionPerformed(evt);
             }
         });
 
@@ -651,28 +651,28 @@ public class ProfesorGUI extends javax.swing.JFrame {
         jLabel33.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel33.setText("Asignatura:");
 
-        jButton13.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jButton13.setText("Borrar");
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
+        btnBorrarTema.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        btnBorrarTema.setText("Borrar");
+        btnBorrarTema.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
+                btnBorrarTemaActionPerformed(evt);
             }
         });
 
-        jDateChooser2.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtFechaTema.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
 
-        jTextField14.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtAsignaturaTema.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
 
-        jTextField15.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        jTextField15.addActionListener(new java.awt.event.ActionListener() {
+        txtTituloTema.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        txtTituloTema.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField15ActionPerformed(evt);
+                txtTituloTemaActionPerformed(evt);
             }
         });
 
-        jTextArea2.setColumns(20);
-        jTextArea2.setRows(5);
-        jScrollPane5.setViewportView(jTextArea2);
+        txtContenidoTema.setColumns(20);
+        txtContenidoTema.setRows(5);
+        jScrollPane5.setViewportView(txtContenidoTema);
 
         javax.swing.GroupLayout TemaLayout = new javax.swing.GroupLayout(Tema.getContentPane());
         Tema.getContentPane().setLayout(TemaLayout);
@@ -691,14 +691,14 @@ public class ProfesorGUI extends javax.swing.JFrame {
                         .addComponent(jLabel30)))
                 .addGap(18, 18, 18)
                 .addGroup(TemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField15)
-                    .addComponent(jTextField14))
+                    .addComponent(txtTituloTema)
+                    .addComponent(txtAsignaturaTema))
                 .addGap(18, 18, 18)
                 .addGroup(TemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(TemaLayout.createSequentialGroup()
                         .addComponent(jLabel31)
                         .addGap(18, 18, 18)
-                        .addComponent(jDateChooser2, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtFechaTema, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(TemaLayout.createSequentialGroup()
                         .addComponent(jLabel29)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -709,10 +709,10 @@ public class ProfesorGUI extends javax.swing.JFrame {
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(TemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton11)
-                    .addComponent(jButton10)
-                    .addComponent(jButton12)
-                    .addComponent(jButton13))
+                    .addComponent(txtGuardarTema)
+                    .addComponent(btnEditTema)
+                    .addComponent(btnHechoTema)
+                    .addComponent(btnBorrarTema))
                 .addContainerGap(64, Short.MAX_VALUE))
         );
         TemaLayout.setVerticalGroup(
@@ -724,13 +724,13 @@ public class ProfesorGUI extends javax.swing.JFrame {
                 .addGroup(TemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel30)
                     .addComponent(jLabel31)
-                    .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jDateChooser2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtTituloTema, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtFechaTema, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(TemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel33)
                     .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtAsignaturaTema, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(TemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(TemaLayout.createSequentialGroup()
@@ -739,13 +739,13 @@ public class ProfesorGUI extends javax.swing.JFrame {
                         .addContainerGap(12, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TemaLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton10)
+                        .addComponent(btnEditTema)
                         .addGap(33, 33, 33)
-                        .addComponent(jButton11)
+                        .addComponent(txtGuardarTema)
                         .addGap(41, 41, 41)
-                        .addComponent(jButton13)
+                        .addComponent(btnBorrarTema)
                         .addGap(36, 36, 36)
-                        .addComponent(jButton12)
+                        .addComponent(btnHechoTema)
                         .addGap(129, 129, 129))))
         );
 
@@ -784,33 +784,38 @@ public class ProfesorGUI extends javax.swing.JFrame {
                 .addGap(14, 14, 14))
         );
 
-        jMenu3.setText("Perfil");
+        jMenuPerfilTutor.setText("Perfil");
 
-        jMenuItem4.setText("Datos Personales");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemDatosTutor.setText("Datos Personales");
+        jMenuItemDatosTutor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
+                jMenuItemDatosTutorActionPerformed(evt);
             }
         });
-        jMenu3.add(jMenuItem4);
+        jMenuPerfilTutor.add(jMenuItemDatosTutor);
 
-        jMenuItem1.setText("Disponivilidad");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemDisponibi.setText("Disponivilidad");
+        jMenuItemDisponibi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                jMenuItemDisponibiActionPerformed(evt);
             }
         });
-        jMenu3.add(jMenuItem1);
+        jMenuPerfilTutor.add(jMenuItemDisponibi);
 
-        jMenuItem2.setText("Material de Estudio");
-        jMenu3.add(jMenuItem2);
+        jMenuItemMaterial.setText("Material de Estudio");
+        jMenuItemMaterial.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemMaterialActionPerformed(evt);
+            }
+        });
+        jMenuPerfilTutor.add(jMenuItemMaterial);
 
-        jMenuBar2.add(jMenu3);
+        jMenuBar2.add(jMenuPerfilTutor);
 
-        jMenu6.setText("Tutorias");
+        jMenuTutoriasTutor.setText("Tutorias");
 
         jMenuItem3.setText("Solicitudes de Tutorias");
-        jMenu6.add(jMenuItem3);
+        jMenuTutoriasTutor.add(jMenuItem3);
 
         jMenuItem5.setText("Tutorias");
         jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
@@ -818,9 +823,9 @@ public class ProfesorGUI extends javax.swing.JFrame {
                 jMenuItem5ActionPerformed(evt);
             }
         });
-        jMenu6.add(jMenuItem5);
+        jMenuTutoriasTutor.add(jMenuItem5);
 
-        jMenuBar2.add(jMenu6);
+        jMenuBar2.add(jMenuTutoriasTutor);
 
         setJMenuBar(jMenuBar2);
 
@@ -838,74 +843,78 @@ public class ProfesorGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+    private void jMenuItemDatosTutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemDatosTutorActionPerformed
         DatosPersona.setVisible(true);
         
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
+    }//GEN-LAST:event_jMenuItemDatosTutorActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void jMenuItemDisponibiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemDisponibiActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_jMenuItemDisponibiActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void txtApellidoTutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoTutorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_txtApellidoTutorActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnEditarDatosTutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarDatosTutorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnEditarDatosTutorActionPerformed
 
-    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
+    private void txtMesTutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMesTutorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField8ActionPerformed
+    }//GEN-LAST:event_txtMesTutorActionPerformed
 
-    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
+    private void txtDiaTutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDiaTutorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField9ActionPerformed
+    }//GEN-LAST:event_txtDiaTutorActionPerformed
 
-    private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField11ActionPerformed
+    private void txtAñoTutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAñoTutorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField11ActionPerformed
+    }//GEN-LAST:event_txtAñoTutorActionPerformed
 
-    private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
+    private void txtHotaInicioTutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtHotaInicioTutorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField12ActionPerformed
+    }//GEN-LAST:event_txtHotaInicioTutorActionPerformed
 
-    private void jTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField13ActionPerformed
+    private void txtHoraFinTutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtHoraFinTutorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField13ActionPerformed
+    }//GEN-LAST:event_txtHoraFinTutorActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void btnHechoDispActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHechoDispActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_btnHechoDispActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void btnAgregarTemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarTemaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_btnAgregarTemaActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    private void btnHechoTemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHechoTemaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
+    }//GEN-LAST:event_btnHechoTemaActionPerformed
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+    private void btnBorrarTemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarTemaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton13ActionPerformed
+    }//GEN-LAST:event_btnBorrarTemaActionPerformed
 
-    private void jTextField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField15ActionPerformed
+    private void txtTituloTemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTituloTemaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField15ActionPerformed
+    }//GEN-LAST:event_txtTituloTemaActionPerformed
 
-    private void jTextField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField17ActionPerformed
+    private void txtDescripcionMaterialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDescripcionMaterialActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField17ActionPerformed
+    }//GEN-LAST:event_txtDescripcionMaterialActionPerformed
 
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+    private void btnHechoMaterialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHechoMaterialActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton14ActionPerformed
+    }//GEN-LAST:event_btnHechoMaterialActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void jMenuItemMaterialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemMaterialActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItemMaterialActionPerformed
 
     /**
      * @param args the command line arguments
@@ -915,26 +924,24 @@ public class ProfesorGUI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JFrame DatosPersona;
     private javax.swing.JFrame Disponivilidad;
+    private com.toedter.calendar.JDateChooser FechaTutor;
     private javax.swing.JFrame MaterialEstudio;
     private javax.swing.JFrame Tema;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
+    private javax.swing.JButton btnAgregarTema;
+    private javax.swing.JButton btnAtrasDatosTutor;
+    private javax.swing.JButton btnBorrarTema;
+    private javax.swing.JButton btnEditTema;
+    private javax.swing.JButton btnEditarDatosTutor;
+    private javax.swing.JButton btnEditarDisp;
+    private javax.swing.JButton btnEditarMaterial;
+    private javax.swing.JButton btnGuardarDatosTutor;
+    private javax.swing.JButton btnGuardarDispo;
+    private javax.swing.JButton btnGuardarMatrial;
+    private javax.swing.JButton btnHechoDisp;
+    private javax.swing.JButton btnHechoMaterial;
+    private javax.swing.JButton btnHechoTema;
     private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
-    private com.toedter.calendar.JDateChooser jDateChooser2;
+    private javax.swing.JComboBox<String> jComboGeneroTutor;
     private javax.swing.JDesktopPane jDesktopPane2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -965,14 +972,14 @@ public class ProfesorGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuBar jMenuBar2;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItemDatosTutor;
+    private javax.swing.JMenuItem jMenuItemDisponibi;
+    private javax.swing.JMenuItem jMenuItemMaterial;
+    private javax.swing.JMenu jMenuPerfilTutor;
+    private javax.swing.JMenu jMenuTutoriasTutor;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -981,25 +988,27 @@ public class ProfesorGUI extends javax.swing.JFrame {
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea jTextArea2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField txtApellidoTutor;
+    private javax.swing.JTextField txtAsignaturaTema;
+    private javax.swing.JTextField txtAñoTutor;
+    private javax.swing.JTextField txtClaveTutor;
+    private javax.swing.JTextArea txtContenidoTema;
+    private javax.swing.JTextField txtCorreoTutor;
+    private javax.swing.JTextField txtCostoTutor;
+    private javax.swing.JTextArea txtDescripcion;
+    private javax.swing.JTextField txtDescripcionMaterial;
+    private javax.swing.JTextField txtDiaTutor;
+    private javax.swing.JTextField txtEspecialodadTutor;
+    private com.toedter.calendar.JDateChooser txtFechaTema;
+    private javax.swing.JButton txtGuardarTema;
+    private javax.swing.JTextField txtHoraFinTutor;
+    private javax.swing.JTextField txtHotaInicioTutor;
+    private javax.swing.JTextField txtMesTutor;
+    private javax.swing.JTextField txtNacionalidadTuTor;
+    private javax.swing.JTextField txtNombreTutor;
+    private javax.swing.JTextField txtTipoMaterial;
+    private javax.swing.JTextField txtTituloMaterial;
+    private javax.swing.JTextField txtTituloTema;
+    private javax.swing.JTextField txtUsuarioTutor;
     // End of variables declaration//GEN-END:variables
 }

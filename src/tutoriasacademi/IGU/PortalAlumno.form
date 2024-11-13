@@ -24,7 +24,7 @@
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="103" alignment="0" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jTextField116" min="-2" pref="130" max="-2" attributes="0"/>
+                                      <Component id="txtNacionalidadAlumno" min="-2" pref="130" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="167" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="jDateChooser20" alignment="0" min="-2" pref="131" max="-2" attributes="0"/>
@@ -33,8 +33,8 @@
                                   <Group type="103" groupAlignment="1" attributes="0">
                                       <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                              <Component id="jTextField118" alignment="1" min="-2" pref="210" max="-2" attributes="0"/>
-                                              <Component id="jTextField119" alignment="1" min="-2" pref="210" max="-2" attributes="0"/>
+                                              <Component id="txtNombreAlumo" alignment="1" min="-2" pref="210" max="-2" attributes="0"/>
+                                              <Component id="txtApellidoAlumno" alignment="1" min="-2" pref="210" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="163" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="1" attributes="0">
@@ -46,19 +46,19 @@
                                   </Group>
                                   <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="jTextField120" pref="178" max="32767" attributes="0"/>
-                                      <Component id="jTextField117" max="32767" attributes="0"/>
+                                      <Component id="txtUsuarioAlumno" pref="178" max="32767" attributes="0"/>
+                                      <Component id="txtClaveAlumno" max="32767" attributes="0"/>
                                       <Component id="jComboBox37" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <Component id="jTextField114" alignment="0" min="-2" pref="276" max="-2" attributes="0"/>
+                              <Component id="txtCorreoAlumno" alignment="0" min="-2" pref="276" max="-2" attributes="0"/>
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
-                                  <Component id="jButton73" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnEditarAlumno" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jButton74" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnGuardarAlumno" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
-                                  <Component id="jButton75" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnAtrasAlumno" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="144" max="-2" attributes="0"/>
                               </Group>
                               <Component id="jScrollPane20" max="32767" attributes="0"/>
@@ -77,28 +77,28 @@
                   <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel237" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField118" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtNombreAlumo" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel240" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField120" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtUsuarioAlumno" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel247" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                      <Component id="jTextField119" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtApellidoAlumno" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel244" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField117" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtClaveAlumno" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel251" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField114" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtCorreoAlumno" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel249" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jComboBox37" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel250" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField116" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtNacionalidadAlumno" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -117,9 +117,9 @@
                   </Group>
                   <EmptySpace pref="33" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jButton73" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton74" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton75" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnEditarAlumno" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnGuardarAlumno" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnAtrasAlumno" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
               </Group>
@@ -135,7 +135,7 @@
             <Property name="text" type="java.lang.String" value="Nombre:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton73">
+        <Component class="javax.swing.JButton" name="btnEditarAlumno">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Helvetica Neue" size="18" style="0"/>
@@ -143,7 +143,7 @@
             <Property name="text" type="java.lang.String" value="Editar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton73ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEditarAlumnoActionPerformed"/>
           </Events>
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane20">
@@ -153,7 +153,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JTextArea" name="jTextArea1">
+            <Component class="javax.swing.JTextArea" name="txtAreaDescripcionAlumno">
               <Properties>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
@@ -161,7 +161,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JButton" name="jButton74">
+        <Component class="javax.swing.JButton" name="btnGuardarAlumno">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Helvetica Neue" size="18" style="0"/>
@@ -169,7 +169,7 @@
             <Property name="text" type="java.lang.String" value="Guardar"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton75">
+        <Component class="javax.swing.JButton" name="btnAtrasAlumno">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Helvetica Neue" size="18" style="0"/>
@@ -209,21 +209,21 @@
             <Property name="text" type="java.lang.String" value="Fecha de Nacimiento:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField114">
+        <Component class="javax.swing.JTextField" name="txtCorreoAlumno">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Helvetica Neue" size="18" style="0"/>
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField116">
+        <Component class="javax.swing.JTextField" name="txtNacionalidadAlumno">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Helvetica Neue" size="18" style="0"/>
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField117">
+        <Component class="javax.swing.JTextField" name="txtClaveAlumno">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Helvetica Neue" size="18" style="0"/>
@@ -278,24 +278,24 @@
             <Property name="text" type="java.lang.String" value="Nacionalidad:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField118">
+        <Component class="javax.swing.JTextField" name="txtNombreAlumo">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Helvetica Neue" size="18" style="0"/>
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField119">
+        <Component class="javax.swing.JTextField" name="txtApellidoAlumno">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Helvetica Neue" size="18" style="0"/>
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField119ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtApellidoAlumnoActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField120">
+        <Component class="javax.swing.JTextField" name="txtUsuarioAlumno">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Helvetica Neue" size="18" style="0"/>
@@ -401,27 +401,27 @@
     </Container>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
       <SubComponents>
-        <Menu class="javax.swing.JMenu" name="jMenu1">
+        <Menu class="javax.swing.JMenu" name="jMenuPerfil">
           <Properties>
             <Property name="text" type="java.lang.String" value="Perfil"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemDatosAlum">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Datos Personales"/>
               </Properties>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTutoriasPasa">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Tutorias Pasadas"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem2ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemTutoriasPasaActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu2">
+        <Menu class="javax.swing.JMenu" name="jMenuTutorias">
           <Properties>
             <Property name="text" type="java.lang.String" value="Tutorias"/>
           </Properties>
