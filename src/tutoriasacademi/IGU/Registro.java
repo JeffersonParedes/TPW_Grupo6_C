@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package tutoriasacademi.IGU;
-
+import java.util.Date;
 /**
  *
  * @author jeffersonparedespretel
@@ -100,6 +100,11 @@ public class Registro extends javax.swing.JFrame {
 
         btnSalir.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         btnSalir.setText("Salir");
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirActionPerformed(evt);
+            }
+        });
 
         texMensaje.setColumns(20);
         texMensaje.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
@@ -257,6 +262,20 @@ public class Registro extends javax.swing.JFrame {
 
     private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
         // TODO add your handling code here:
+        String nombre=txtnombre.getText();
+        String apellido=txtapellido.getText();
+        String correo=txtcorreo.getText();
+        String usuario=txtusuario.getText();
+        String clave=txtclave.getText();
+        String nacionalidad=txtnacionalidad.getText();
+        String genero= (String) comboGenero.getSelectedItem();
+        String tipoUsuario= (String) combTipo.getSelectedItem();
+        Date fechaNacimiento = fechanacimiento.getDate();
+        
+        if (nombre.isEmpty() || apellido.isEmpty() || correo.isEmpty() || correo.isEmpty() || usuario.isEmpty() || clave.isEmpty()) {
+            texMensaje.setText("Porfavor, complete todo los espacios obligatorios ");
+            return;
+        }
     }//GEN-LAST:event_btnRegistrarActionPerformed
 
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
@@ -266,6 +285,11 @@ public class Registro extends javax.swing.JFrame {
     private void txtnombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnombreActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtnombreActionPerformed
+
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_btnSalirActionPerformed
 
     /**
      * @param args the command line arguments
