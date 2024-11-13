@@ -26,51 +26,367 @@ public class Administracion extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jMenuBar2 = new javax.swing.JMenuBar();
-        jMenu3 = new javax.swing.JMenu();
-        jMenu4 = new javax.swing.JMenu();
-        jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
-        jMenuBar3 = new javax.swing.JMenuBar();
-        jMenu5 = new javax.swing.JMenu();
-        jMenu6 = new javax.swing.JMenu();
-        jMenuBar4 = new javax.swing.JMenuBar();
-        jMenu7 = new javax.swing.JMenu();
-        jMenu8 = new javax.swing.JMenu();
-        jMenuBar5 = new javax.swing.JMenuBar();
-        jMenu9 = new javax.swing.JMenu();
-        jMenu10 = new javax.swing.JMenu();
+        DatosPersonalAdmin = new javax.swing.JFrame();
+        jLabel244 = new javax.swing.JLabel();
+        jLabel247 = new javax.swing.JLabel();
+        jButton74 = new javax.swing.JButton();
+        jLabel248 = new javax.swing.JLabel();
+        jButton75 = new javax.swing.JButton();
+        jLabel249 = new javax.swing.JLabel();
+        jDateChooser20 = new com.toedter.calendar.JDateChooser();
+        jLabel250 = new javax.swing.JLabel();
+        jComboBox37 = new javax.swing.JComboBox<>();
+        jTextField118 = new javax.swing.JTextField();
+        jLabel238 = new javax.swing.JLabel();
+        jTextField119 = new javax.swing.JTextField();
+        jTextField114 = new javax.swing.JTextField();
+        jTextField120 = new javax.swing.JTextField();
+        jTextField116 = new javax.swing.JTextField();
+        jLabel251 = new javax.swing.JLabel();
+        jLabel237 = new javax.swing.JLabel();
+        jTextField117 = new javax.swing.JTextField();
+        jButton73 = new javax.swing.JButton();
+        jLabel240 = new javax.swing.JLabel();
+        AdminAlumno = new javax.swing.JFrame();
+        jLabel253 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jButton13 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
+        AdminTutor = new javax.swing.JFrame();
+        jButton14 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
+        jLabel254 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
+        jButton16 = new javax.swing.JButton();
+        jButton17 = new javax.swing.JButton();
         jDesktopPane1 = new javax.swing.JDesktopPane();
         jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
 
-        jMenu3.setText("File");
-        jMenuBar2.add(jMenu3);
+        jLabel244.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jLabel244.setText("Clave:");
 
-        jMenu4.setText("Edit");
-        jMenuBar2.add(jMenu4);
+        jLabel247.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jLabel247.setText("Apellido:");
 
-        jCheckBoxMenuItem1.setSelected(true);
-        jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
+        jButton74.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jButton74.setText("Guardar");
 
-        jMenu5.setText("File");
-        jMenuBar3.add(jMenu5);
+        jLabel248.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
+        jLabel248.setText("Datos Personales del Administrador:");
 
-        jMenu6.setText("Edit");
-        jMenuBar3.add(jMenu6);
+        jButton75.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jButton75.setText("Atras");
+        jButton75.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton75ActionPerformed(evt);
+            }
+        });
 
-        jMenu7.setText("File");
-        jMenuBar4.add(jMenu7);
+        jLabel249.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jLabel249.setText("Genero:");
 
-        jMenu8.setText("Edit");
-        jMenuBar4.add(jMenu8);
+        jDateChooser20.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
 
-        jMenu9.setText("File");
-        jMenuBar5.add(jMenu9);
+        jLabel250.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jLabel250.setText("Nacionalidad:");
 
-        jMenu10.setText("Edit");
-        jMenuBar5.add(jMenu10);
+        jComboBox37.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jComboBox37.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hombre", "Mujer", "Indeterminado" }));
+
+        jTextField118.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+
+        jLabel238.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jLabel238.setText("Fecha de Nacimiento:");
+
+        jTextField119.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jTextField119.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField119ActionPerformed(evt);
+            }
+        });
+
+        jTextField114.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+
+        jTextField120.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+
+        jTextField116.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+
+        jLabel251.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jLabel251.setText("Correo Electronico:");
+
+        jLabel237.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jLabel237.setText("Nombre:");
+
+        jTextField117.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+
+        jButton73.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jButton73.setText("Editar");
+        jButton73.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton73ActionPerformed(evt);
+            }
+        });
+
+        jLabel240.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jLabel240.setText("Usuario");
+
+        javax.swing.GroupLayout DatosPersonalAdminLayout = new javax.swing.GroupLayout(DatosPersonalAdmin.getContentPane());
+        DatosPersonalAdmin.getContentPane().setLayout(DatosPersonalAdminLayout);
+        DatosPersonalAdminLayout.setHorizontalGroup(
+            DatosPersonalAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DatosPersonalAdminLayout.createSequentialGroup()
+                .addGroup(DatosPersonalAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(DatosPersonalAdminLayout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addGroup(DatosPersonalAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel248)
+                            .addGroup(DatosPersonalAdminLayout.createSequentialGroup()
+                                .addGroup(DatosPersonalAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel247)
+                                    .addComponent(jLabel251)
+                                    .addComponent(jLabel237)
+                                    .addComponent(jLabel238)
+                                    .addComponent(jLabel250))
+                                .addGap(18, 18, 18)
+                                .addGroup(DatosPersonalAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(DatosPersonalAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DatosPersonalAdminLayout.createSequentialGroup()
+                                            .addComponent(jTextField116, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(167, 167, 167))
+                                        .addComponent(jDateChooser20, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(DatosPersonalAdminLayout.createSequentialGroup()
+                                        .addGroup(DatosPersonalAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addGroup(DatosPersonalAdminLayout.createSequentialGroup()
+                                                .addGroup(DatosPersonalAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                                    .addComponent(jTextField118, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(jTextField119, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGap(163, 163, 163)
+                                                .addGroup(DatosPersonalAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                    .addComponent(jLabel244)
+                                                    .addComponent(jLabel240)))
+                                            .addComponent(jLabel249))
+                                        .addGap(11, 11, 11)
+                                        .addGroup(DatosPersonalAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(jTextField120, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
+                                            .addComponent(jTextField117)
+                                            .addComponent(jComboBox37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(jTextField114, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(DatosPersonalAdminLayout.createSequentialGroup()
+                        .addGap(240, 240, 240)
+                        .addComponent(jButton73)
+                        .addGap(57, 57, 57)
+                        .addComponent(jButton74)
+                        .addGap(89, 89, 89)
+                        .addComponent(jButton75)))
+                .addContainerGap(13, Short.MAX_VALUE))
+        );
+        DatosPersonalAdminLayout.setVerticalGroup(
+            DatosPersonalAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DatosPersonalAdminLayout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(jLabel248, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32)
+                .addGroup(DatosPersonalAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel237)
+                    .addComponent(jTextField118, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel240)
+                    .addComponent(jTextField120, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(DatosPersonalAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel247, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField119, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel244)
+                    .addComponent(jTextField117, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(DatosPersonalAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel251)
+                    .addComponent(jTextField114, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel249)
+                    .addComponent(jComboBox37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(DatosPersonalAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel250)
+                    .addComponent(jTextField116, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(DatosPersonalAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel238)
+                    .addComponent(jDateChooser20, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE))
+                .addGap(53, 53, 53)
+                .addGroup(DatosPersonalAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton73)
+                    .addComponent(jButton74)
+                    .addComponent(jButton75))
+                .addContainerGap(27, Short.MAX_VALUE))
+        );
+
+        jLabel253.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
+        jLabel253.setText("Administracion de Alumnos:");
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        jButton13.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jButton13.setText("Borrar");
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
+
+        jButton10.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jButton10.setText("Editar");
+
+        jButton11.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jButton11.setText("Actualizar");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+
+        jButton12.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jButton12.setText("Hecho");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout AdminAlumnoLayout = new javax.swing.GroupLayout(AdminAlumno.getContentPane());
+        AdminAlumno.getContentPane().setLayout(AdminAlumnoLayout);
+        AdminAlumnoLayout.setHorizontalGroup(
+            AdminAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AdminAlumnoLayout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(AdminAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AdminAlumnoLayout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(AdminAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton11)
+                            .addComponent(jButton10)
+                            .addComponent(jButton12)
+                            .addComponent(jButton13)))
+                    .addComponent(jLabel253))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        AdminAlumnoLayout.setVerticalGroup(
+            AdminAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AdminAlumnoLayout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addComponent(jLabel253)
+                .addGroup(AdminAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AdminAlumnoLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(AdminAlumnoLayout.createSequentialGroup()
+                        .addGap(125, 125, 125)
+                        .addComponent(jButton10)
+                        .addGap(33, 33, 33)
+                        .addComponent(jButton11)
+                        .addGap(41, 41, 41)
+                        .addComponent(jButton13)
+                        .addGap(36, 36, 36)
+                        .addComponent(jButton12)))
+                .addContainerGap(33, Short.MAX_VALUE))
+        );
+
+        jButton14.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jButton14.setText("Actualizar");
+
+        jButton15.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jButton15.setText("Hecho");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
+
+        jLabel254.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
+        jLabel254.setText("Administracion de Tutores:");
+
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane2.setViewportView(jTable2);
+
+        jButton16.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jButton16.setText("Borrar");
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
+
+        jButton17.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jButton17.setText("Editar");
+
+        javax.swing.GroupLayout AdminTutorLayout = new javax.swing.GroupLayout(AdminTutor.getContentPane());
+        AdminTutor.getContentPane().setLayout(AdminTutorLayout);
+        AdminTutorLayout.setHorizontalGroup(
+            AdminTutorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AdminTutorLayout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(AdminTutorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AdminTutorLayout.createSequentialGroup()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(AdminTutorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton14)
+                            .addComponent(jButton17)
+                            .addComponent(jButton15)
+                            .addComponent(jButton16)))
+                    .addComponent(jLabel254))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        AdminTutorLayout.setVerticalGroup(
+            AdminTutorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AdminTutorLayout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addComponent(jLabel254)
+                .addGroup(AdminTutorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AdminTutorLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(AdminTutorLayout.createSequentialGroup()
+                        .addGap(125, 125, 125)
+                        .addComponent(jButton17)
+                        .addGap(33, 33, 33)
+                        .addComponent(jButton14)
+                        .addGap(41, 41, 41)
+                        .addComponent(jButton16)
+                        .addGap(36, 36, 36)
+                        .addComponent(jButton15)))
+                .addContainerGap(50, Short.MAX_VALUE))
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Administrador ");
@@ -98,15 +414,41 @@ public class Administracion extends javax.swing.JFrame {
                 .addContainerGap(85, Short.MAX_VALUE))
         );
 
-        jMenu1.setText("Estudiantes ");
+        jMenu1.setText("Perfil");
         jMenu1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenu1ActionPerformed(evt);
             }
         });
+
+        jMenuItem1.setText("Datos Personales");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem1);
+
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Tutores");
+        jMenu2.setText("Administrar");
+
+        jMenuItem2.setText("Alumnos");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem2);
+
+        jMenuItem3.setText("Tutores");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem3);
+
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
@@ -129,29 +471,100 @@ public class Administracion extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenu1ActionPerformed
 
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jTextField119ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField119ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField119ActionPerformed
+
+    private void jButton73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton73ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton73ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton75ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton75ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton75ActionPerformed
+
     /**
      * @param args the command line arguments
      */
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
+    private javax.swing.JFrame AdminAlumno;
+    private javax.swing.JFrame AdminTutor;
+    private javax.swing.JFrame DatosPersonalAdmin;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton73;
+    private javax.swing.JButton jButton74;
+    private javax.swing.JButton jButton75;
+    private javax.swing.JComboBox<String> jComboBox37;
+    private com.toedter.calendar.JDateChooser jDateChooser20;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel237;
+    private javax.swing.JLabel jLabel238;
+    private javax.swing.JLabel jLabel240;
+    private javax.swing.JLabel jLabel244;
+    private javax.swing.JLabel jLabel247;
+    private javax.swing.JLabel jLabel248;
+    private javax.swing.JLabel jLabel249;
+    private javax.swing.JLabel jLabel250;
+    private javax.swing.JLabel jLabel251;
+    private javax.swing.JLabel jLabel253;
+    private javax.swing.JLabel jLabel254;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu5;
-    private javax.swing.JMenu jMenu6;
-    private javax.swing.JMenu jMenu7;
-    private javax.swing.JMenu jMenu8;
-    private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuBar jMenuBar2;
-    private javax.swing.JMenuBar jMenuBar3;
-    private javax.swing.JMenuBar jMenuBar4;
-    private javax.swing.JMenuBar jMenuBar5;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTable2;
+    private javax.swing.JTextField jTextField114;
+    private javax.swing.JTextField jTextField116;
+    private javax.swing.JTextField jTextField117;
+    private javax.swing.JTextField jTextField118;
+    private javax.swing.JTextField jTextField119;
+    private javax.swing.JTextField jTextField120;
     // End of variables declaration//GEN-END:variables
 }
