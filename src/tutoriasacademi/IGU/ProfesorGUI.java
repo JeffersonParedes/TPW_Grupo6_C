@@ -850,7 +850,7 @@ public class ProfesorGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItemDatosTutorActionPerformed
 
     private void jMenuItemDisponibiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemDisponibiActionPerformed
-        // TODO add your handling code here:
+        Disponivilidad.setVisible(true);
     }//GEN-LAST:event_jMenuItemDisponibiActionPerformed
 
     private void txtApellidoTutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoTutorActionPerformed
