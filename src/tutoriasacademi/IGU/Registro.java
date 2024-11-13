@@ -4,6 +4,8 @@
  */
 package tutoriasacademi.IGU;
 import java.util.Date;
+import tutoriasacademi.IGU.PortalAlumno;
+import tutoriasacademi.IGU.ProfesorGUI;
 /**
  *
  * @author jeffersonparedespretel
@@ -276,10 +278,30 @@ public class Registro extends javax.swing.JFrame {
             texMensaje.setText("Porfavor, complete todo los espacios obligatorios ");
             return;
         }
+        texMensaje.setText("Registro completo" + usuario+ ".");
+        
+        if (tipoUsuario.equals("Alumno")) {
+            PortalAlumno PortalAlumno = new PortalAlumno();
+            PortalAlumno.setVisible(true);
+           } else if (tipoUsuario.equals("Tutor")) {
+                    ProfesorGUI ProfesorGUI = new ProfesorGUI();
+                    ProfesorGUI.setVisible(true);
+                    }
+            this.dispose();
     }//GEN-LAST:event_btnRegistrarActionPerformed
 
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
         // TODO add your handling code here:
+        txtnombre.setText("");
+        txtapellido.setText("");
+        txtcorreo.setText("");
+        txtusuario.setText("");
+        txtclave.setText("");
+        txtnacionalidad.setText("");
+        fechanacimiento.setDate(null);
+        combTipo.setSelectedIndex(0);
+        comboGenero.setSelectedIndex(0);
+        texMensaje.setText("");
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
     private void txtnombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnombreActionPerformed
