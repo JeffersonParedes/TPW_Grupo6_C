@@ -1,54 +1,77 @@
-<!DOCTYPE html>
+
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Usuario - Olympia Fitness</title>
-    <link rel="stylesheet" href="stylesusuarios.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio de Sesión - Olympia Fitness</title>
+        <link rel="stylesheet" href="stylesusuarios.css">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>Olympia Fitness</h1>
-            <img src="logo.png" alt="Logo Olympia Fitness" class="logo">
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <i class="fas fa-user-circle user-icon"></i>
+            <h2>Inicia Sesion o registrate para poder acceder a nuestros servicios</h2>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Puedes acercar a nuestro local para registrarte</li>
+                <li><i class="fas fa-envelope"></i> Usa tu correo para inciar sesion o registrarte</li>
+                <li><i class="fas fa-phone"></i> Nuestro numero de contacto +51 947 34 90 11</li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
-    </header>
-    
-    <section class="registro">
-        <div class="container">
-            <h1>Registro de Usuario</h1>
-            <form action="registro.php" method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
 
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required>
+        <div class="form-container">
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <input type="text" placeholder="Correo Electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar Sesión</button>
+                <button type="button" onclick="showRegister()">Registrarse</button>
+            </form>
 
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="telefono">Teléfono:</label>
-                <input type="text" id="telefono" name="telefono">
-
-                <label for="direccion">Dirección:</label>
-                <input type="text" id="direccion" name="direccion">
-
-                <label for="contraseña">Contraseña:</label>
-                <input type="password" id="contraseña" name="contraseña" required>
-
-                <label for="rol">Rol:</label>
-                <select id="rol" name="rol">
-                    <option value="cliente">Cliente</option>
-                    <option value="entrenador">Entrenador</option>
-                </select>
-
-                <input type="submit" value="Registrarse">
+            <form id="registerForm" style="display:none;">
+                <input type="text" placeholder="Nombre Completo" required>
+                <input type="text" placeholder="Peso" required>
+                <input type="text" placeholder="Altura" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Registrarse</button>
+                <button type="button" onclick="showLogin()">Volver a Iniciar Sesión</button>
             </form>
         </div>
-    </section>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Olympia Fitness. Todos los derechos reservados.</p>
-    </footer>
+    <script>
+        function showRegister() {
+            document.getElementById("loginForm").style.display = "none";
+            document.getElementById("registerForm").style.display = "block";
+        }
+
+        function showLogin() {
+            document.getElementById("loginForm").style.display = "block";
+            document.getElementById("registerForm").style.display = "none";
+        }
+
+    </script>
+    <script>
+        // Función para simular el inicio de sesión y redirigir al contrato
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
+
+            // Aquí podrías verificar el correo y la contraseña
+            window.location.href = "contrato.html"; // Redirige a la página de contrato
+        });
+    </script>
+
+
 </body>
 </html>
