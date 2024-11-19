@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrato - Olympia Fitness</title>
+    <link rel="stylesheet" href="stylescontrato.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Selecciona tu especialidad</h2>
+        <form id="specialtyForm">
+            <label for="especialidad">Elige tu especialidad:</label><br>
+            <select id="especialidad" required>
+                <option value="yoga">Yoga</option>
+                <option value="cardio">Cardio</option>
+                <option value="pesas">Pesas</option>
+                <option value="personalizado">Personalizado</option>
+            </select><br><br>
+
+            <div id="personalizadoField" style="display:none;">
+                <label for="personalizado">Escribe tu especialidad personalizada:</label><br>
+                <textarea id="personalizado" rows="4" placeholder="Escribe aquí lo que necesitas..."></textarea><br><br>
+            </div>
+
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" required><br><br>
+
+            <label for="altura">Altura (cm):</label>
+            <input type="number" id="altura" required><br><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" required><br><br>
+
+            <button type="submit">Generar Carnet</button>
+        </form>
+
+        <div id="carnet" class="carnet-container" style="display:none;">
+            <h3>Carnet de Cliente</h3>
+            <p><strong>Nombre:</strong> <span id="nombreCarnet"></span></p>
+            <p><strong>Edad:</strong> <span id="edadCarnet"></span></p>
+            <p><strong>Peso:</strong> <span id="pesoCarnet"></span> kg</p>
+            <p><strong>Altura:</strong> <span id="alturaCarnet"></span> cm</p>
+            <p><strong>Especialidad:</strong> <span id="especialidadCarnet"></span></p>
+            <p><strong>Código de Barras:</strong></p>
+            <div class="barcode-container">
+                <canvas id="barcodeCanvas"></canvas>
+            </div>
+
+            <button id="printButton" onclick="printCarnet()">
+                <i class="fas fa-print"></i> Imprimir Carnet
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Para el ícono de la impresora -->
+    <script>
+        // Muestra el campo de texto cuando la opción personalizada es seleccionada
+        document.getElementById('especialidad').addEventListener('change', function() {
+            if (this.value === 'personalizado') {
+                document.getElementById('personalizadoField').style.display = 'block';
+            } else {
+                document.getElementById('personalizadoField').style.display = 'none';
+            }
+        });
+
+        document.getElementById('specialtyForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Obtenemos los datos del formulario
+            const nombre = 'Usuario'; // Aquí deberías obtener el nombre desde la sesión
+            const edad = document.getElementById('edad').value;
+            const peso = document.getElementById('peso').value;
+            const altura = document.getElementById('altura').value;
+            const especialidad = document.getElementById('especialidad').value;
+            const personalizado = document.getElementById('personalizado').value;
+
+            // Mostrar el carnet
+            document.getElementById('nombreCarnet').textContent = nombre;
+            document.getElementById('edadCarnet').textContent = edad;
+            document.getElementById('pesoCarnet').textContent = peso;
+            document.getElementById('alturaCarnet').textContent = altura;
+            document.getElementById('especialidadCarnet').textContent = especialidad === 'personalizado' ? personalizado : especialidad;
+
+            // Generar código de barras
+            JsBarcode("#barcodeCanvas", nombre + '-' + edad + '-' + peso + '-' + altura, {
+                format: "CODE128"
+            });
+
+            // Mostrar el carnet
+            document.getElementById('carnet').style.display = 'block';
+        });
+
+        // Función para imprimir el carnet
+        function printCarnet() {
+            const carnet = document.getElementById('carnet');
+            const printWindow = window.open('', '', 'height=500,width=800');
+            printWindow.document.write('<html><head><title>Carnet</title></head><body>');
+            printWindow.document.write(carnet.outerHTML);
+            printWindow.document.write('</body></html>');
+            printWindow.document.close();
+            printWindow.print();
+        }
+    </script>
+</body>
+</html>
