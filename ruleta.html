@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ruleta de Descuentos</title>
+    <link rel="stylesheet" type="text/css" href="Ruleta.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Ruleta de Descuentos</h1>
+        <div class="concursantes">
+            <canvas id="idcanvas" width="600" height="600"></canvas>
+            <div class="mark-winner"></div>
+            <br>
+            <button onclick="sortear()"><span id="idestado">Sortear</span></button>
+            <div id="resultado" class="resultado"></div>
+        </div>
+    </div>
+    <script>
+        const array_concursantes = [
+            '80% de descuento',
+            '50% de descuento',
+            '30% de descuento',
+            'Vuelve a intentarlo',
+            '10% de descuento'
+        ];
+
+        let canvas = document.getElementById("idcanvas");
+        let context = canvas.getContext("2d");
+        let center = canvas.width / 2;
+
+        // Dibuja la ruleta
+        context.beginPath();
+        context.moveTo(center, center);
+        context.arc(center, center, center, 0, 2 * Math.PI);
+        context.lineTo(center, center);
+        context.fillStyle = '#33333333';
+        context.fill();
+
+        context.beginPath();
+        context.moveTo(center, center);
+        context.arc(center, center, center - 10, 0, 2 * Math.PI);
+        context.lineTo(center, center);
+        context.fillStyle = 'black';
+        context.fill();
+
+        for (let i = 0; i < array_concursantes.length; i++) {
+            context.beginPath();
+            context.moveTo(center, center);
+            context.arc(center, center, center - 20, i * 2 * Math.PI / array_concursantes.length, (i + 1) * 2 * Math.PI / array_concursantes.length);
+            context.lineTo(center, center);
+            context.fillStyle = random_color();
+            context.fill();
+
+            context.save();
+            context.translate(center, center);
+            context.rotate(3 * 2 * Math.PI / (5 * array_concursantes.length) + i * 2 * Math.PI / array_concursantes.length);
+            context.translate(-center, -center);
+            context.font = "16px Comic Sans MS";
+            context.textAlign = "right";
+            context.fillStyle = "white";
+            context.fillText(array_concursantes[i], canvas.width - 30, center);
+            context.restore();
+        }
+
+        let pos_ini = Math.random() * 360; // Posición inicial aleatoria
+        let movement;
+        let velocidad = 20 + Math.random() * 10; // Velocidad inicial con aleatoriedad
+        let desaceleracion = 0.05 + Math.random() * 0.02; // Factor de desaceleración aleatorio
+
+        function sortear() {
+            if (!movement) {
+                movement = setInterval(() => {
+                    if (velocidad > 0.1) {
+                        pos_ini += velocidad;
+                        velocidad -= desaceleracion; // Reducir la velocidad gradualmente
+                        canvas.style.transform = rotate(${pos_ini}deg);
+                    } else {
+                        clearInterval(movement);
+                        movement = null;
+                        velocidad = 20 + Math.random() * 10; // Reinicia con aleatoriedad
+                        desaceleracion = 0.05 + Math.random() * 0.02;
+                        const winnerIndex = Math.floor((360 - (pos_ini % 360)) / (360 / array_concursantes.length)) % array_concursantes.length;
+                        mostrarResultado(array_concursantes[winnerIndex]);
+                    }
+                }, 10);
+            }
+        }
+
+        function mostrarResultado(resultado) {
+            const resultadoDiv = document.getElementById("resultado");
+            resultadoDiv.innerHTML = Resultado: ${resultado};
+            resultadoDiv.style.display = "block";
+        }
+
+        function random_color() {
+            return #${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')};
+        }
+    </script>
+</body>
+</html>
